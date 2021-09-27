@@ -184,6 +184,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="age_b.h" />
+    <ClInclude Include="Answer.h" />
+    <ClInclude Include="Answers_L.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="gender_b.h" />
     <ClInclude Include="location_b.h" />
@@ -196,13 +198,17 @@
     <ClInclude Include="P_Gender.h" />
     <ClInclude Include="P_Gender_Location.h" />
     <ClInclude Include="P_Location.h" />
+    <ClInclude Include="Question.h" />
     <ClInclude Include="Quinzz.h" />
     <ClInclude Include="QuinzzDlg.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Test.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="age_b.cpp" />
+    <ClCompile Include="Answer.cpp" />
+    <ClCompile Include="Answers_L.cpp" />
     <ClCompile Include="gender_b.cpp" />
     <ClCompile Include="location_b.cpp" />
     <ClCompile Include="pch.cpp">
@@ -219,8 +225,10 @@
     <ClCompile Include="P_Gender.cpp" />
     <ClCompile Include="P_Gender_Location.cpp" />
     <ClCompile Include="P_Location.cpp" />
+    <ClCompile Include="Question.cpp" />
     <ClCompile Include="Quinzz.cpp" />
     <ClCompile Include="QuinzzDlg.cpp" />
+    <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Quinzz.rc" />

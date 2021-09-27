@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Profile">
+      <UniqueIdentifier>{3abaa1cf-4305-4ea3-88ca-28ba903ec879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Test">
+      <UniqueIdentifier>{fd342e02-7fa6-4054-9950-4452c78bde16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Profile">
+      <UniqueIdentifier>{c33b1d05-e4dd-4f0b-be6e-a1f954b0b1ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Test">
+      <UniqueIdentifier>{2baf3574-fd05-4995-964d-ea6440d0eb4f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Quinzz.h">
@@ -33,38 +45,50 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Profile.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="P_Age.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="P_Age_Gender.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="P_Age_Gender_Location.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="location_b.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Profile</Filter>
     </ClInclude>
     <ClInclude Include="age_b.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Profile</Filter>
     </ClInclude>
     <ClInclude Include="gender_b.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="location_b.h">
+      <Filter>Header Files\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="P_Age_Gender.h">
+      <Filter>Header Files\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="P_Age_Gender_Location.h">
+      <Filter>Header Files\Profile</Filter>
     </ClInclude>
     <ClInclude Include="P_Age_Location.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Profile</Filter>
     </ClInclude>
     <ClInclude Include="P_Gender.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Profile</Filter>
     </ClInclude>
     <ClInclude Include="P_Gender_Location.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Profile</Filter>
     </ClInclude>
     <ClInclude Include="P_Location.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="Profile.h">
+      <Filter>Header Files\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="Test.h">
+      <Filter>Header Files\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Question.h">
+      <Filter>Header Files\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Answers_L.h">
+      <Filter>Header Files\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Answer.h">
+      <Filter>Header Files\Test</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -77,38 +101,50 @@
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Profile.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="P_Age.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="P_Age_Gender.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="P_Age_Gender_Location.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="location_b.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="age_b.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Profile</Filter>
     </ClCompile>
     <ClCompile Include="gender_b.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="location_b.cpp">
+      <Filter>Source Files\Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="P_Age.cpp">
+      <Filter>Source Files\Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="P_Age_Gender.cpp">
+      <Filter>Source Files\Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="P_Age_Gender_Location.cpp">
+      <Filter>Source Files\Profile</Filter>
     </ClCompile>
     <ClCompile Include="P_Age_Location.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Profile</Filter>
     </ClCompile>
     <ClCompile Include="P_Gender.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Profile</Filter>
     </ClCompile>
     <ClCompile Include="P_Gender_Location.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Profile</Filter>
     </ClCompile>
     <ClCompile Include="P_Location.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="Profile.cpp">
+      <Filter>Source Files\Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>Source Files\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Question.cpp">
+      <Filter>Source Files\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Answers_L.cpp">
+      <Filter>Source Files\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Answer.cpp">
+      <Filter>Source Files\Test</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
