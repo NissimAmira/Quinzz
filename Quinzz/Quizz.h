@@ -4,7 +4,7 @@
 
 using namespace std;
 
-class Test
+class Quizz
 {
 private:
 	static string id;
@@ -12,8 +12,8 @@ private:
 	int num_of_questions;
 	Question *questions;
 public:
-	Test(int num);
-	~Test() { delete this->questions; };
+	Quizz(int num);
+	~Quizz() { delete this->questions; };
 
 	void setQuestions(Question* q);
 	void setQuestionAtIndex(Question q, int index);

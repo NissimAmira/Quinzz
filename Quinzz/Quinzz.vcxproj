@@ -204,7 +204,7 @@
     <ClInclude Include="QuinzzDlg.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="Test.h" />
+    <ClInclude Include="Quizz.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="age_b.cpp" />

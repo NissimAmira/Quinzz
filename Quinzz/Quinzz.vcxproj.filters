@@ -16,9 +16,6 @@
     <Filter Include="Header Files\Profile">
       <UniqueIdentifier>{3abaa1cf-4305-4ea3-88ca-28ba903ec879}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Test">
-      <UniqueIdentifier>{fd342e02-7fa6-4054-9950-4452c78bde16}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Profile">
       <UniqueIdentifier>{c33b1d05-e4dd-4f0b-be6e-a1f954b0b1ee}</UniqueIdentifier>
     </Filter>
@@ -30,6 +27,9 @@
     </Filter>
     <Filter Include="Header Files\Windows">
       <UniqueIdentifier>{40ae7fe0-a844-4cb3-8811-3ad134bf9a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Quizz">
+      <UniqueIdentifier>{fd342e02-7fa6-4054-9950-4452c78bde16}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -84,17 +84,17 @@
     <ClInclude Include="Profile.h">
       <Filter>Header Files\Profile</Filter>
     </ClInclude>
-    <ClInclude Include="Test.h">
-      <Filter>Header Files\Test</Filter>
+    <ClInclude Include="Quizz.h">
+      <Filter>Header Files\Quizz</Filter>
     </ClInclude>
     <ClInclude Include="Question.h">
-      <Filter>Header Files\Test</Filter>
+      <Filter>Header Files\Quizz</Filter>
     </ClInclude>
     <ClInclude Include="Answers_L.h">
-      <Filter>Header Files\Test</Filter>
+      <Filter>Header Files\Quizz</Filter>
     </ClInclude>
     <ClInclude Include="Answer.h">
-      <Filter>Header Files\Test</Filter>
+      <Filter>Header Files\Quizz</Filter>
     </ClInclude>
     <ClInclude Include="NewTestDlg.h">
       <Filter>Header Files\Windows</Filter>
