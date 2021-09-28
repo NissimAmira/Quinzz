@@ -90,6 +90,9 @@
     <ClInclude Include="Answer.h">
       <Filter>Header Files\Test</Filter>
     </ClInclude>
+    <ClInclude Include="NewTestDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Quinzz.cpp">
@@ -145,6 +148,9 @@
     </ClCompile>
     <ClCompile Include="Answer.cpp">
       <Filter>Source Files\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="NewTestDlg.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
