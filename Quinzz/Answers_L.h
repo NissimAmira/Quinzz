@@ -14,10 +14,10 @@ public:
 	Answers_L(int s);
 	~Answers_L() { delete this->answers_arr; };
 
-	void setArray(Answer* arr) const;
-	void setArrayAtIndex(Answer* arr, int index) const;
-	Answer& getArray();
-	string getValueAtIndex(int index);
+	void setArray(Answer* arr);
+	void setValueAtIndex(Answer answer, int index);
+	Answer* getArray() const;
+	Answer getValueAtIndex(int index) const;
 
 };
 

@@ -7,6 +7,12 @@ Answer::Answer(bool c, string a)
 	setAnswer(a);
 }
 
+Answer::Answer(const Answer& a)
+{
+	setFlag(a.getFlag());
+	setAnswer(a.getAnswer());
+}
+
 void Answer::setFlag(bool c) 
 {
 	this->correct = c;

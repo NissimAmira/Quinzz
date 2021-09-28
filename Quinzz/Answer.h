@@ -10,7 +10,9 @@ private:
 	bool correct; // T correct; F incorrect;
 	string answer;
 public:
+	Answer() : correct(nullptr), answer(nullptr) {};
 	Answer(bool c, string a);
+	Answer(const Answer&);
 	~Answer() {};
 
 	void setFlag(bool c) ;
