@@ -17,8 +17,12 @@
 #define IDC_SMALL_T                     1003
 #define IDC_NAME_BOX                    1004
 #define IDC_QUIZ_TITLE                  1005
-#define IDC_COMBO2                      1011
 #define IDC_NUM_OF_Q                    1011
+#define IDC_NAME_CB                     1012
+#define IDC_AGE_CB                      1013
+#define IDC_GENDER_CB                   1014
+#define IDC_NAME_CB4                    1015
+#define IDC_LOCATION_CB                 1015
 
 // Next default values for new objects
 // 
@@ -26,7 +30,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        133
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1012
+#define _APS_NEXT_CONTROL_VALUE         1013
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
