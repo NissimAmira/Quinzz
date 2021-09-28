@@ -230,7 +230,7 @@
     <ClCompile Include="Question.cpp" />
     <ClCompile Include="Quinzz.cpp" />
     <ClCompile Include="QuinzzDlg.cpp" />
-    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="Quizz.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Quinzz.rc" />

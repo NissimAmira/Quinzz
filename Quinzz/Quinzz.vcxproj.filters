@@ -19,9 +19,6 @@
     <Filter Include="Source Files\Profile">
       <UniqueIdentifier>{c33b1d05-e4dd-4f0b-be6e-a1f954b0b1ee}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Test">
-      <UniqueIdentifier>{2baf3574-fd05-4995-964d-ea6440d0eb4f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Windows">
       <UniqueIdentifier>{4c5fef98-8d22-4a7c-84c4-0510ff18d482}</UniqueIdentifier>
     </Filter>
@@ -30,6 +27,9 @@
     </Filter>
     <Filter Include="Header Files\Quizz">
       <UniqueIdentifier>{fd342e02-7fa6-4054-9950-4452c78bde16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Quizz">
+      <UniqueIdentifier>{2baf3574-fd05-4995-964d-ea6440d0eb4f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -143,20 +143,20 @@
     <ClCompile Include="Profile.cpp">
       <Filter>Source Files\Profile</Filter>
     </ClCompile>
-    <ClCompile Include="Test.cpp">
-      <Filter>Source Files\Test</Filter>
-    </ClCompile>
     <ClCompile Include="Question.cpp">
-      <Filter>Source Files\Test</Filter>
+      <Filter>Source Files\Quizz</Filter>
     </ClCompile>
     <ClCompile Include="Answers_L.cpp">
-      <Filter>Source Files\Test</Filter>
+      <Filter>Source Files\Quizz</Filter>
     </ClCompile>
     <ClCompile Include="Answer.cpp">
-      <Filter>Source Files\Test</Filter>
+      <Filter>Source Files\Quizz</Filter>
     </ClCompile>
     <ClCompile Include="NewTestDlg.cpp">
       <Filter>Source Files\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Quizz.cpp">
+      <Filter>Source Files\Quizz</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -20,4 +20,11 @@ protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
 
 	DECLARE_MESSAGE_MAP()
+public:
+	// Enter your name
+	CString NAME_BOX;
+	afx_msg void OnEnChangeNameBox();
+	afx_msg void OnBnDropDownNumOfQ(NMHDR* pNMHDR, LRESULT* pResult);
+//	CComboBox NUM_OF_Q;
+	int NUM_OF_Q;
 };
