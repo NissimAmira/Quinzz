@@ -7,8 +7,8 @@ using namespace std;
 class Quizz
 {
 private:
-	static string id;
-	string title;
+	static CString id;
+	CString title;
 	int num_of_questions;
 	Question *questions;
 	int typeID;

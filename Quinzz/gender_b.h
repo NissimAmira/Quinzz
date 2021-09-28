@@ -6,11 +6,11 @@ using namespace std;
 class gender_b
 {
 private:
-	string gender;
+	CString gender;
 
 public:
-	void setGender(string);
-	string getGender();
+	void setGender(CString);
+	CString getGender();
 	bool isBinary();
 
 };

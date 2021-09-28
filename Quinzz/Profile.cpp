@@ -4,15 +4,15 @@
 
 using namespace std;
 
-Profile::Profile(string n) {
+Profile::Profile(CString n) {
 	this->setName(n);
 }
 
-void Profile::setName(string n) {
+void Profile::setName(CString n) {
 	this->name = n;
 }
 
-string Profile::getName() {
+CString Profile::getName() {
 	return this->name;
 }
 

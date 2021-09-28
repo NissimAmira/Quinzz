@@ -8,17 +8,17 @@ class Profile
 
 private:
 	static int profiles_counter;
-	string name;
+	CString name;
 	int type_id;
 
 public:
 
 	Profile() : type_id(1) {};
-	Profile(string n);
+	Profile(CString n);
 	virtual ~Profile() {};
 
-	void setName(string n);
-	string getName();
+	void setName(CString n);
+	CString getName();
 	int getTypeId();
 	virtual void setTypeId() = 0;
 

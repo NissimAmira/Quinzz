@@ -151,6 +151,7 @@ void CQuinzzDlg::OnPaint()
 	{
 		CDialogEx::OnPaint();
 	}
+
 }
 
 // The system calls this function to obtain the cursor to display while the user drags
@@ -167,6 +168,7 @@ void CQuinzzDlg::OnBnClickedNewTest()
 	CDialogEx::OnCancel();
 	NewTestDlg new_test_dlg(NULL);
 	new_test_dlg.DoModal();
+	owner.setName(nameOfOwner);
 
 }
 

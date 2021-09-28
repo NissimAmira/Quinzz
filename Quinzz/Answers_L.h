@@ -7,7 +7,7 @@ using namespace std;
 class Answers_L
 {
 private:
-	static string id;
+	static CString id;
 	const int size; // size of array
 	Answer* answers_arr;
 public:

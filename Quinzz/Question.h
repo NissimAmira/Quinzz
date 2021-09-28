@@ -7,19 +7,19 @@ using namespace std;
 
 class Question {
 private:
-	/*static*/ string id;
+	/*static*/ CString id;
 	int num_of_answers;
-	string question;
+	CString question;
 	Answers_L answers;
 public:
 	Question();
-	Question(string q);
+	Question(CString q);
 	~Question() {};
 
-	void setQuestion(string q);
+	void setQuestion(CString q);
 	void setAnswers(Answers_L a);
 
-	string getQuestion() const;
+	CString getQuestion() const;
 	Answers_L getAnswers() const;
 
 };

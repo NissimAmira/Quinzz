@@ -6,11 +6,11 @@ using namespace std;
 class location_b
 {
 private:
-    string location;
+    CString location;
 public: 
 
-    virtual void setLocation(string) = 0;
-    string getLocation();
+    virtual void setLocation(CString) = 0;
+    CString getLocation();
     bool isIsraeli();
 };
 

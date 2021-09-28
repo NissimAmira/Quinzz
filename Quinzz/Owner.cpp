@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-Owner::Owner(Quizz* q, string n) {
+Owner::Owner(Quizz* q, CString n) {
 	setQuizes(q);
 	this->setName(n);
 }

@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Answer.h"
 
-Answer::Answer(bool c, string a)
+Answer::Answer(bool c, CString a)
 {
 	setFlag(c);
 	setAnswer(a);
@@ -18,7 +18,7 @@ void Answer::setFlag(bool c)
 	this->correct = c;
 }
 
-void Answer::setAnswer(string s) 
+void Answer::setAnswer(CString s) 
 {
 	this->answer = s;
 
@@ -29,7 +29,7 @@ bool Answer::getFlag() const
 	return this->correct;
 }
 
-string Answer::getAnswer() const
+CString Answer::getAnswer() const
 {
 	return this->answer;
 }

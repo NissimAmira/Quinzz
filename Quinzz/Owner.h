@@ -11,7 +11,7 @@ private:
     Quizz* quizes;
 public:
     Owner() : quizes(nullptr) { this->setName(""); this->setTypeId(1); };
-    Owner(Quizz* q, string n);
+    Owner(Quizz* q, CString n);
     ~Owner() { delete(this->quizes); };
 
     void setQuizes(Quizz* q);
