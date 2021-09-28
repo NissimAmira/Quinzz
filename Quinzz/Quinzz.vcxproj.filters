@@ -25,6 +25,12 @@
     <Filter Include="Source Files\Test">
       <UniqueIdentifier>{2baf3574-fd05-4995-964d-ea6440d0eb4f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Windows">
+      <UniqueIdentifier>{4c5fef98-8d22-4a7c-84c4-0510ff18d482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Windows">
+      <UniqueIdentifier>{40ae7fe0-a844-4cb3-8811-3ad134bf9a8b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Quinzz.h">
@@ -90,6 +96,9 @@
     <ClInclude Include="Answer.h">
       <Filter>Header Files\Test</Filter>
     </ClInclude>
+    <ClInclude Include="NewTestDlg.h">
+      <Filter>Header Files\Windows</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Quinzz.cpp">
@@ -145,6 +154,9 @@
     </ClCompile>
     <ClCompile Include="Answer.cpp">
       <Filter>Source Files\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="NewTestDlg.cpp">
+      <Filter>Source Files\Windows</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

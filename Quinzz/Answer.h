@@ -7,15 +7,15 @@ class Answer
 {
 private:
 	static string id;
-	int flag; // 1 correct; 0 incorrect;
+	bool correct; // T correct; F incorrect;
 	string answer;
 public:
-	Answer(int f);
-	~Answer();
+	Answer(bool c, string a);
+	~Answer() {};
 
-	void setFlag(int f) const;
-	void setAnswer(string s) const;
-	void getFlag(int f);
-	void getAnswer(string s);
+	void setFlag(bool c) ;
+	void setAnswer(string s) ;
+	bool getFlag() const;
+	string getAnswer() const;
 };
 

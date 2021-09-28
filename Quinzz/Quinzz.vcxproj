@@ -189,6 +189,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="gender_b.h" />
     <ClInclude Include="location_b.h" />
+    <ClInclude Include="NewTestDlg.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Profile.h" />
     <ClInclude Include="P_Age.h" />
@@ -211,6 +212,7 @@
     <ClCompile Include="Answers_L.cpp" />
     <ClCompile Include="gender_b.cpp" />
     <ClCompile Include="location_b.cpp" />
+    <ClCompile Include="NewTestDlg.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

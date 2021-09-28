@@ -6,6 +6,7 @@
 #include "framework.h"
 #include "Quinzz.h"
 #include "QuinzzDlg.h"
+#include "NewTestDlg.h"
 #include "afxdialogex.h"
 
 #ifdef _DEBUG
@@ -154,10 +155,9 @@ HCURSOR CQuinzzDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
-
-
-
 void CQuinzzDlg::OnBnClickedNewTest()
 {
-	// TODO: Add your control notification handler code here
+	CDialogEx::OnCancel();
+	NewTestDlg new_test_dlg(NULL);
+	new_test_dlg.DoModal();
 }
