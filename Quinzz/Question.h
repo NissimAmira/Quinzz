@@ -11,6 +11,7 @@ private:
 	string question;
 	Answers_L *answers;
 public:
+	Question() {};
 	Question(int num, string q);
 	~Question() { delete this->answers; };
 
