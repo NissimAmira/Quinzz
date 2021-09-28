@@ -67,6 +67,7 @@ BEGIN_MESSAGE_MAP(CQuinzzDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_NEW_TEST, &CQuinzzDlg::OnBnClickedNewTest)
+	ON_STN_CLICKED(ID_BIG_TITLE, &CQuinzzDlg::OnStnClickedBigTitle)
 END_MESSAGE_MAP()
 
 
@@ -160,4 +161,10 @@ void CQuinzzDlg::OnBnClickedNewTest()
 	CDialogEx::OnCancel();
 	NewTestDlg new_test_dlg(NULL);
 	new_test_dlg.DoModal();
+}
+
+
+void CQuinzzDlg::OnStnClickedBigTitle()
+{
+	// TODO: Add your control notification handler code here
 }
