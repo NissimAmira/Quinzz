@@ -33,4 +33,5 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnBnClickedNewTest();
+	afx_msg void OnStnClickedBigTitle();
 };
