@@ -1,21 +1,26 @@
 #pragma once
 #include <string>
+#include <iostream>
 #include "Answers_L.h"
 
 using namespace std;
 
 class Question {
 private:
-	static string id;
-	const int  num_of_answers;
+	/*static*/ string id;
+	int num_of_answers;
 	string question;
-	Answers_L *answers;
+	Answers_L answers;
 public:
-	Question(int num, string q);
-	~Question() { delete this->answers; };
+	Question();
+	Question(string q);
+	~Question() {};
 
-	void setQuestion(string q) const;
-	string getQuestion();
+	void setQuestion(string q);
+	void setAnswers(Answers_L a);
+
+	string getQuestion() const;
+	Answers_L getAnswers() const;
 
 };
 

@@ -24,6 +24,7 @@
     <Keyword>MFCProj</Keyword>
     <RootNamespace>Quinzz</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName />
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -186,10 +187,12 @@
     <ClInclude Include="age_b.h" />
     <ClInclude Include="Answer.h" />
     <ClInclude Include="Answers_L.h" />
+    <ClInclude Include="DashboardDlg.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="gender_b.h" />
     <ClInclude Include="location_b.h" />
     <ClInclude Include="NewTestDlg.h" />
+    <ClInclude Include="Owner.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Profile.h" />
     <ClInclude Include="P_Age.h" />
@@ -210,9 +213,11 @@
     <ClCompile Include="age_b.cpp" />
     <ClCompile Include="Answer.cpp" />
     <ClCompile Include="Answers_L.cpp" />
+    <ClCompile Include="DashboardDlg.cpp" />
     <ClCompile Include="gender_b.cpp" />
     <ClCompile Include="location_b.cpp" />
     <ClCompile Include="NewTestDlg.cpp" />
+    <ClCompile Include="Owner.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

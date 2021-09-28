@@ -1,22 +1,24 @@
 #include "pch.h"
 #include "Quizz.h"
 
-Quizz::Quizz(int n) {
+
+Quizz::Quizz(int num_of_q, int typeP) {
 	
 }
 
-void setQuestions(Question* q) {
-	this->questions = q;
+void Quizz::setQuestions(Question* q) {
+	//this->questions = q;
 }
 
-void setQuestionAtIndex(Question q, int index) {
+void Quizz::setQuestionAtIndex(Question q, int index) {
 
 }
 
-Question* getQuestions() const {
-	return 
+Question* Quizz:: getQuestions(){
+	return this->questions;
+
 }
 
-Question getQuestionAtIndex(int index) const {
-
+Question Quizz::getQuestionAtIndex(int index) {
+	return this->questions[index];
 }

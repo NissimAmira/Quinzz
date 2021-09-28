@@ -99,6 +99,12 @@
     <ClInclude Include="NewTestDlg.h">
       <Filter>Header Files\Windows</Filter>
     </ClInclude>
+    <ClInclude Include="DashboardDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Owner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Quinzz.cpp">
@@ -157,6 +163,12 @@
     </ClCompile>
     <ClCompile Include="Quizz.cpp">
       <Filter>Source Files\Quizz</Filter>
+    </ClCompile>
+    <ClCompile Include="DashboardDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Owner.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

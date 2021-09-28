@@ -11,15 +11,19 @@ private:
 	string title;
 	int num_of_questions;
 	Question *questions;
-public:
+	int typeID;
 
-	Quizz(int num);
+public:
+	Quizz() : title(nullptr), num_of_questions(0), questions(nullptr), typeID(0) {};
+	Quizz(int num_of_q, int typeP);
 	~Quizz() { delete this->questions; };
 
 	void setQuestions(Question* q);
+	void setNumOfQuestions(int n);
+	void setTypeId(int n);
 	void setQuestionAtIndex(Question q, int index);
-	Question* getQuestions() const;
-	Question getQuestionAtIndex(int index) const;
+	Question* getQuestions() ;
+	Question getQuestionAtIndex(int index) ;
 	friend class Profile;
 };
 

@@ -13,13 +13,14 @@ private:
 
 public:
 
-	Profile();
-	virtual ~Profile() = 0;
+	Profile() : type_id(1) {};
+	Profile(string n);
+	virtual ~Profile() {};
 
-	void setName();
+	void setName(string n);
 	string getName();
-	virtual void setTypeId() = 0;
 	int getTypeId();
+	virtual void setTypeId() = 0;
 
 };
 

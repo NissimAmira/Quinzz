@@ -8,6 +8,7 @@
 #include "QuinzzDlg.h"
 #include "NewTestDlg.h"
 #include "afxdialogex.h"
+#include "Owner.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -53,6 +54,7 @@ END_MESSAGE_MAP()
 
 CQuinzzDlg::CQuinzzDlg(CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_QUINZZ_DIALOG, pParent)
+	, nameOfOwner(_T(""))
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
@@ -60,6 +62,8 @@ CQuinzzDlg::CQuinzzDlg(CWnd* pParent /*=nullptr*/)
 void CQuinzzDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	DDX_Text(pDX, IDC_NAME_OF_OWNER, nameOfOwner);
+	DDV_MaxChars(pDX, nameOfOwner, 30);
 }
 
 BEGIN_MESSAGE_MAP(CQuinzzDlg, CDialogEx)
@@ -67,7 +71,7 @@ BEGIN_MESSAGE_MAP(CQuinzzDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_NEW_TEST, &CQuinzzDlg::OnBnClickedNewTest)
-	ON_STN_CLICKED(ID_BIG_TITLE, &CQuinzzDlg::OnStnClickedBigTitle)
+	ON_EN_CHANGE(IDC_NAME_OF_OWNER, &CQuinzzDlg::OnEnChangeNameOfOwner)
 END_MESSAGE_MAP()
 
 
@@ -156,15 +160,20 @@ HCURSOR CQuinzzDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
 void CQuinzzDlg::OnBnClickedNewTest()
 {
 	CDialogEx::OnCancel();
 	NewTestDlg new_test_dlg(NULL);
 	new_test_dlg.DoModal();
+
 }
 
 
-void CQuinzzDlg::OnStnClickedBigTitle()
+
+
+void CQuinzzDlg::OnEnChangeNameOfOwner()
 {
-	// TODO: Add your control notification handler code here
+	UpdateData(TRUE);
 }
