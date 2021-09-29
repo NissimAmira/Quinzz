@@ -28,6 +28,7 @@ public:
 
 	CString getTitle() const;
 	Question* getQuestions() const;
+	int getNumOfQ() const;
 	Question getQuestionAtIndex(int index) const;
 
 };

@@ -49,6 +49,11 @@ Question* Quizz:: getQuestions() const {
 
 }
 
+int Quizz::getNumOfQ() const
+{
+	return this->num_of_questions;
+}
+
 Question Quizz::getQuestionAtIndex(int index) const{
 	return this->questions[index];
 }
