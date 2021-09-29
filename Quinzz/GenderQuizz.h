@@ -1,6 +1,6 @@
 #pragma once
 #include "DataCollectionQuizz.h"
-class BasicDCquizz :
+class GenderQuizz :
     public DataCollectionQuizz
 {
 };
