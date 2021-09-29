@@ -28,7 +28,6 @@ BOOL DashboardDlg::OnInitDialog() {
 	return (1);
 }
 
-DashboardDlg::
 
 
 
