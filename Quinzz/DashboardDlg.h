@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Quinzz.h"
 
 // DashboardDlg dialog
 
@@ -9,6 +9,7 @@ class DashboardDlg : public CDialogEx
 
 public:
 	DashboardDlg(CWnd* pParent = nullptr);   // standard constructor
+	BOOL OnInitDialog();
 	virtual ~DashboardDlg();
 
 // Dialog Data
@@ -20,4 +21,7 @@ protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
 
 	DECLARE_MESSAGE_MAP()
+public:
+	
+	CTreeCtrl quizTreeCtrl;
 };
