@@ -50,6 +50,10 @@
 #define IDC_QUIZ9                       1046
 #define IDC_QUIZ10                      1047
 #define IDC_OWNER_NAME_T                1049
+#define IDC_AGE_RADIO                   1051
+#define IDC_GENDER_RADIO                1052
+#define IDC_RADIO3                      1053
+#define IDC_LOCATION_RADIO              1053
 
 // Next default values for new objects
 // 
@@ -57,7 +61,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        142
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1051
+#define _APS_NEXT_CONTROL_VALUE         1054
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

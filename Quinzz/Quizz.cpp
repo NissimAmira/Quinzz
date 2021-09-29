@@ -82,7 +82,3 @@ Question Quizz::getQuestionAtIndex(int index) const{
 	return this->questions[index];
 }
 
-Profile* Quizz::getDataProfile()
-{
-	return this->dataType;
-}

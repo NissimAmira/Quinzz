@@ -39,7 +39,7 @@ public:
 	CButton newQuizBtn9;
 	CButton newQuizBtn10;
 
-	CString newQuiz(int quizNum, Owner&);
+	void newQuiz(int quizNum, Owner&);
 	afx_msg void OnBnClickedNewQuizBtn1();
 
 

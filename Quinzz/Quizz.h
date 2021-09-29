@@ -13,12 +13,14 @@ private:
 	int num_of_questions;
 	Question *questions;
 	int typeID;
-	Profile* dataType;
+
+	//Empty data types - the needed data type will get value
 
 public:
 	Quizz() : title(""), num_of_questions(0), questions(nullptr), typeID(-1) {};
+	
 	Quizz(CString t, int num_of_q, int typeP);
-	~Quizz() { delete this->questions; };
+	//~Quizz() { delete(this->questions); };
 
 	void setTitle(CString t);
 	void setQuestions(Question* q);

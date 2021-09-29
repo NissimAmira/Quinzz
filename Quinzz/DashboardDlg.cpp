@@ -6,8 +6,6 @@
 #include "DashboardDlg.h"
 #include "afxdialogex.h"
 #include "NewTestDlg.h"
-#include "QuizBTN.h"
-
 
 // DashboardDlg dialog
 
@@ -53,19 +51,17 @@ END_MESSAGE_MAP()
 
 
 
-CString DashboardDlg::newQuiz(int quizNum, Owner& o)
+void DashboardDlg::newQuiz(int quizNum, Owner& o)
 {
-	NewTestDlg newQuiz(o, nullptr);
+	NewTestDlg newQuiz(o.getQuizzAtIndex(quizNum), nullptr);
 	newQuiz.DoModal();
-	newQuiz;
 
-	return CString();
 }
 
 void DashboardDlg::OnBnClickedNewQuizBtn1()
 {
-	// TODO: Add your control notification handler code here
 
+	newQuiz(1, owner);
 
 
 }

@@ -10,7 +10,7 @@ class NewTestDlg : public CDialogEx
 public:
 
 	//NewTestDlg(CWnd* pParent = nullptr);   // standard constructor
-	NewTestDlg(Owner &owner, CWnd* pParent = nullptr);
+	NewTestDlg(Quizz &q, CWnd* pParent = nullptr);
 	virtual ~NewTestDlg();
 
 // Dialog Data
@@ -23,23 +23,20 @@ protected:
 
 	DECLARE_MESSAGE_MAP()
 public:
-	// Enter your name
-	CString NAME_BOX;
+	friend class DashboardDlg;
 	int profileTypeID = 1;
-	afx_msg void OnEnChangeNameBox();
-	Owner& owner;
 	int NUM_OF_Q; //CComboBox NUM_OF_Q;
 	CString QUIZ_TITLE;
-	CButton NAME_CB;
-	CButton GENDER_CB;
-	CButton AGE_CB;
-	CButton LOCATION_CB;
+
 	afx_msg void OnEnChangeQuizTitle();
 	afx_msg void OnCbnSelchangeNumOfQ();
-	afx_msg void OnBnClickedNameCb();
-	afx_msg void OnBnClickedGenderCb();
-	afx_msg void OnBnClickedAgeCb();
-	afx_msg void OnBnClickedLocationCb();
+
 	CButton NEXT_BTN;
 	afx_msg void OnBnClickedNextBtn();
+	int radioStage = 0;
+	CButton ageRadio;
+	CButton genderRadio;
+	CButton locationRadio;
+	afx_msg void OnBnClickedAgeRadio();
 };
+
