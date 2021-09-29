@@ -16,6 +16,8 @@ public:
 
     void setQuizes(Quizz* q);
     void setQuizAtIndex(Quizz q, int index);
+    void addNewQuiz();
+    void deleteQuiz();
     Quizz* getQuiz();
     Quizz getQuizzAtIndex(int index);
     void setTypeId();

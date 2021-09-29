@@ -14,7 +14,6 @@
 // See Quinzz.cpp for the implementation of this class
 //
 
-
 class CQuinzzApp : public CWinApp
 {
 public:
