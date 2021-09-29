@@ -11,7 +11,7 @@ private:
 	bool correct; // T correct; F incorrect;
 	CString answer;
 public:
-	Answer() : correct(nullptr), answer(nullptr) {};
+	Answer() {};
 	Answer(bool c, CString a);
 	Answer(const Answer&);
 	~Answer() {};

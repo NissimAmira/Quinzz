@@ -9,13 +9,11 @@
 #endif
 
 #include "resource.h"		// main symbols
-#include "Owner.h"
 
 // CQuinzzApp:
 // See Quinzz.cpp for the implementation of this class
 //
 
-Owner owner;
 
 class CQuinzzApp : public CWinApp
 {

@@ -165,10 +165,10 @@
       <Filter>Source Files\Quizz</Filter>
     </ClCompile>
     <ClCompile Include="DashboardDlg.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Windows</Filter>
     </ClCompile>
     <ClCompile Include="Owner.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Profile</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

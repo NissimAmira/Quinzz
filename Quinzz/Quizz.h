@@ -14,7 +14,7 @@ private:
 	int typeID;
 
 public:
-	Quizz() : title(nullptr), num_of_questions(0), questions(nullptr), typeID(0) {};
+	Quizz() {};
 	Quizz(int num_of_q, int typeP);
 	~Quizz() { delete this->questions; };
 

@@ -25,3 +25,8 @@ Quizz Owner::getQuizzAtIndex(int index) {
 	return this->quizes[index];
 }
 
+void Owner::setTypeId()
+{
+	this->type_id = 1;
+}
+

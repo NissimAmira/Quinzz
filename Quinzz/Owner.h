@@ -10,7 +10,7 @@ class Owner :
 private:
     Quizz* quizes;
 public:
-    Owner() : quizes(nullptr) { this->setName(""); this->setTypeId(1); };
+    Owner() : quizes(nullptr) { this->setTypeId(); };
     Owner(Quizz* q, CString n);
     ~Owner() { delete(this->quizes); };
 
@@ -18,7 +18,6 @@ public:
     void setQuizAtIndex(Quizz q, int index);
     Quizz* getQuiz();
     Quizz getQuizzAtIndex(int index);
-    void setTypeId() {};
-    void setTypeId(int n);
+    void setTypeId();
 };
 
