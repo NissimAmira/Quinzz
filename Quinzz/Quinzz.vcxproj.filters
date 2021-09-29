@@ -48,9 +48,6 @@
     <ClInclude Include="Quinzz.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="QuinzzDlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="framework.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -129,11 +126,17 @@
     <ClInclude Include="RatesCalcDCquizz.h">
       <Filter>Header Files\Quizz\DC quizes</Filter>
     </ClInclude>
+    <ClInclude Include="QuinzzDlg.h">
+      <Filter>Header Files\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="MainDashboard.h">
+      <Filter>Header Files\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="newQuizD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="QuinzzDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -206,6 +209,15 @@
     <ClCompile Include="RatesCalcDCquizz.cpp">
       <Filter>Source Files\Quizz\DC quizes</Filter>
     </ClCompile>
+    <ClCompile Include="QuinzzDlg.cpp">
+      <Filter>Source Files\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="MainDashboard.cpp">
+      <Filter>Source Files\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="newQuizD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Quinzz.rc">
@@ -215,6 +227,9 @@
   <ItemGroup>
     <None Include="res\Quinzz.rc2">
       <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource.hm">
+      <Filter>Header Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -14,11 +14,17 @@
 #define IDD_QESTION_EDITOR              137
 #define IDD_QUESTION_EDITOR             137
 #define IDD_DASHBOARD_DIALOG            140
+#define IDD_NEW_DASHBOARD               142
+#define IDD_NEW_QUIZ                    144
 #define IDC_BUTTON1                     1000
 #define IDC_NEW_TEST                    1000
 #define IDC_NEXT_BTN                    1000
 #define IDC_NEW_QUIZ_BTN1               1000
+#define IDC_EXIST_BTN                   1000
+#define IDC_CREATE_QUIZ                 1000
+#define IDC_CREATE_QUIZ_BTN             1000
 #define IDC_NEW_QUIZ_BTN2               1001
+#define IDC_NEW_QUIZ                    1001
 #define IDC_BIO_L1                      1002
 #define IDC_NEW_QUIZ_BTN3               1002
 #define IDC_SMALL_T                     1003
@@ -53,14 +59,17 @@
 #define IDC_AGE_RADIO                   1051
 #define IDC_GENDER_RADIO                1052
 #define IDC_LOCATION_RADIO              1053
+#define IDC_NUM_QUESTIONS               1059
+#define IDC_SIMPLE_QUIZ_RADIO           1060
+#define IDC_DCQUIZ_RADIO                1061
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        142
+#define _APS_NEXT_RESOURCE_VALUE        147
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1054
+#define _APS_NEXT_CONTROL_VALUE         1064
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

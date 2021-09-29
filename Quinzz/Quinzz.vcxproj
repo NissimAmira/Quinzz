@@ -192,6 +192,8 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="gender_b.h" />
     <ClInclude Include="location_b.h" />
+    <ClInclude Include="MainDashboard.h" />
+    <ClInclude Include="newQuizD.h" />
     <ClInclude Include="NewTestDlg.h" />
     <ClInclude Include="Owner.h" />
     <ClInclude Include="pch.h" />
@@ -221,6 +223,8 @@
     <ClCompile Include="DataCollectionQuizz.cpp" />
     <ClCompile Include="gender_b.cpp" />
     <ClCompile Include="location_b.cpp" />
+    <ClCompile Include="MainDashboard.cpp" />
+    <ClCompile Include="newQuizD.cpp" />
     <ClCompile Include="NewTestDlg.cpp" />
     <ClCompile Include="Owner.cpp" />
     <ClCompile Include="pch.cpp">
@@ -249,6 +253,7 @@
     <ResourceCompile Include="Quinzz.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resource.hm" />
     <None Include="res\Quinzz.rc2" />
   </ItemGroup>
   <ItemGroup>
