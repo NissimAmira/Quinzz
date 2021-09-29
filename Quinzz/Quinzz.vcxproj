@@ -184,12 +184,13 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AgeQuizz.h" />
     <ClInclude Include="age_b.h" />
     <ClInclude Include="Answer.h" />
-    <ClInclude Include="BasicDCquizz.h" />
     <ClInclude Include="DashboardDlg.h" />
     <ClInclude Include="DataCollectionQuizz.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="GenderQuizz.h" />
     <ClInclude Include="gender_b.h" />
     <ClInclude Include="location_b.h" />
     <ClInclude Include="NewTestDlg.h" />
@@ -207,18 +208,18 @@
     <ClInclude Include="QuestionEditor.h" />
     <ClInclude Include="Quinzz.h" />
     <ClInclude Include="QuinzzDlg.h" />
-    <ClInclude Include="RatesCalcDCquizz.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SimpleQuizz.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Quizz.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AgeQuizz.cpp" />
     <ClCompile Include="age_b.cpp" />
     <ClCompile Include="Answer.cpp" />
-    <ClCompile Include="BasicDCquizz.cpp" />
     <ClCompile Include="DashboardDlg.cpp" />
     <ClCompile Include="DataCollectionQuizz.cpp" />
+    <ClCompile Include="GenderQuizz.cpp" />
     <ClCompile Include="gender_b.cpp" />
     <ClCompile Include="location_b.cpp" />
     <ClCompile Include="NewTestDlg.cpp" />
@@ -242,7 +243,6 @@
     <ClCompile Include="Quinzz.cpp" />
     <ClCompile Include="QuinzzDlg.cpp" />
     <ClCompile Include="Quizz.cpp" />
-    <ClCompile Include="RatesCalcDCquizz.cpp" />
     <ClCompile Include="SimpleQuizz.cpp" />
   </ItemGroup>
   <ItemGroup>

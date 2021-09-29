@@ -123,10 +123,10 @@
     <ClInclude Include="SimpleQuizz.h">
       <Filter>Header Files\Quizz</Filter>
     </ClInclude>
-    <ClInclude Include="BasicDCquizz.h">
+    <ClInclude Include="AgeQuizz.h">
       <Filter>Header Files\Quizz\DC quizes</Filter>
     </ClInclude>
-    <ClInclude Include="RatesCalcDCquizz.h">
+    <ClInclude Include="GenderQuizz.h">
       <Filter>Header Files\Quizz\DC quizes</Filter>
     </ClInclude>
   </ItemGroup>
@@ -197,13 +197,13 @@
     <ClCompile Include="SimpleQuizz.cpp">
       <Filter>Source Files\Quizz</Filter>
     </ClCompile>
-    <ClCompile Include="BasicDCquizz.cpp">
-      <Filter>Source Files\Quizz\DC quizes</Filter>
-    </ClCompile>
     <ClCompile Include="DataCollectionQuizz.cpp">
       <Filter>Source Files\Quizz</Filter>
     </ClCompile>
-    <ClCompile Include="RatesCalcDCquizz.cpp">
+    <ClCompile Include="AgeQuizz.cpp">
+      <Filter>Source Files\Quizz\DC quizes</Filter>
+    </ClCompile>
+    <ClCompile Include="GenderQuizz.cpp">
       <Filter>Source Files\Quizz\DC quizes</Filter>
     </ClCompile>
   </ItemGroup>
