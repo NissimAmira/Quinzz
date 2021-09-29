@@ -11,6 +11,7 @@ public:
     P_Age(int a);
     ~P_Age() {};
 
+    void setTypeId() { this->type_id = 11; }
 
 };
 

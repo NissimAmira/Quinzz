@@ -8,5 +8,8 @@ public:
     P_Location() { this->setLocation(_T("")); };
     P_Location(CString l);
     ~P_Location() {};
+
+    void setTypeId() { this->type_id = 14; }
+
 };
 

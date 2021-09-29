@@ -13,6 +13,7 @@ public:
     P_Age_Gender(int a, CString g);
     ~P_Age_Gender() {};
    
+    void setTypeId() { this->type_id = 9; }
 
 };
 

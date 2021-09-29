@@ -10,7 +10,7 @@ class NewTestDlg : public CDialogEx
 public:
 
 	//NewTestDlg(CWnd* pParent = nullptr);   // standard constructor
-	NewTestDlg(CWnd* pParent, Owner &owner);
+	NewTestDlg(Owner &owner, CWnd* pParent = nullptr);
 	virtual ~NewTestDlg();
 
 // Dialog Data

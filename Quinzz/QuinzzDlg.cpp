@@ -9,6 +9,7 @@
 #include "NewTestDlg.h"
 #include "afxdialogex.h"
 #include "Owner.h"
+#include "DashboardDlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -163,10 +164,10 @@ HCURSOR CQuinzzDlg::OnQueryDragIcon()
 
 void CQuinzzDlg::OnBnClickedNewTest()
 {
-
-	DashboardDlg new_dashboard_dlg(nameOfOwner, NULL);
+	CDialogEx::OnCancel();
+	DashboardDlg new_dashboard_dlg(NULL, nameOfOwner);
 	new_dashboard_dlg.DoModal();
-	EndDialog(1);
+	
 }
 
 

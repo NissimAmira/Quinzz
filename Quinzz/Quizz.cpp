@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Quizz.h"
 #include "Question.h"
-
+#include "P_Age_Gender_Location.h"
 
 
 Quizz::Quizz(CString t, int num_of_q, int typeP) 
@@ -38,6 +38,31 @@ void Quizz::setQuestionAtIndex(Question q, int index)
 	this->questions[index] = q;
 }
 
+void Quizz::setDataType()
+{
+	switch (this->getTypeId()) {
+		
+	case 8: 
+		P_Age_Gender_Location p();
+		break;
+	case 9:
+		break;
+	case 10: 
+		break;
+	case 11:
+		break;
+	case 12:
+		break;
+	case 13:
+		break;
+	case 14: 
+		break;
+	case 15:
+		break;
+
+	}
+}
+
 int Quizz::getTypeId()
 {
 	return this->typeID;
@@ -55,4 +80,9 @@ Question* Quizz:: getQuestions() const {
 
 Question Quizz::getQuestionAtIndex(int index) const{
 	return this->questions[index];
+}
+
+Profile* Quizz::getDataProfile()
+{
+	return this->dataType;
 }

@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include "Question.h"
+#include "Profile.h"
 
 using namespace std;
 
@@ -12,6 +13,7 @@ private:
 	int num_of_questions;
 	Question *questions;
 	int typeID;
+	Profile* dataType;
 
 public:
 	Quizz() : title(""), num_of_questions(0), questions(nullptr), typeID(-1) {};
@@ -23,11 +25,13 @@ public:
 	void setNumOfQuestions(int n);
 	void setTypeId(int n);
 	void setQuestionAtIndex(Question q, int index);
-	int getTypeId();
+	void setDataType();
 
+	int getTypeId();
 	CString getTitle() const;
 	Question* getQuestions() const;
 	Question getQuestionAtIndex(int index) const;
+	Profile *getDataProfile();
 	friend class Profile;
 };
 

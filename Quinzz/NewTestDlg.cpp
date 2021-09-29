@@ -22,7 +22,7 @@ IMPLEMENT_DYNAMIC(NewTestDlg, CDialogEx)
 }
 */
 
-NewTestDlg::NewTestDlg(CWnd* pParent, Owner& o) 
+NewTestDlg::NewTestDlg(Owner& o, CWnd* pParent)
 	: CDialogEx(IDD_NEW_TEST, pParent)
 	, NAME_BOX(_T(""))
 	, NUM_OF_Q(0)

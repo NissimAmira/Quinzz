@@ -9,5 +9,7 @@ public:
     P_Gender_Location();
     P_Gender_Location(CString g, CString l);
     ~P_Gender_Location() {};
+
+    void setTypeId() { this->type_id = 12; }
 };
 

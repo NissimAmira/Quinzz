@@ -8,5 +8,7 @@ class P_Age_Location :
     P_Age_Location(int a, CString l);
     ~P_Age_Location() {};
 
+    void setTypeId() { this->type_id = 10; }
+
 };
 

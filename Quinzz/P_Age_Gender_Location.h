@@ -15,6 +15,7 @@ public:
     P_Age_Gender_Location(int a, CString g, CString l);
     ~P_Age_Gender_Location() {};
 
+    void setTypeId() { this->type_id = 8; }
 
 };
 

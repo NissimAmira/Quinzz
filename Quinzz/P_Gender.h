@@ -10,5 +10,7 @@ public:
     P_Gender(CString g);
     ~P_Gender() {};
 
+    void setTypeId() { this->type_id = 13; }
+
 };
 
