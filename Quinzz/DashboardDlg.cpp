@@ -45,13 +45,12 @@ DashboardDlg::~DashboardDlg()
 void DashboardDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
-	DDX_Control(pDX, IDC_QUIZ_TREE, quizTreeCtrl);
+	//  DDX_Control(pDX, IDC_QUIZ_TREE, quizTreeCtrl);
 }
 
 
 BEGIN_MESSAGE_MAP(DashboardDlg, CDialogEx)
 
-	ON_NOTIFY(NM_DBLCLK, IDC_QUIZ_TREE, &DashboardDlg::OnNMDblclkQuizTree)
 END_MESSAGE_MAP()
 
 
@@ -59,10 +58,3 @@ END_MESSAGE_MAP()
 
 
 
-void DashboardDlg::OnNMDblclkQuizTree(NMHDR* pNMHDR, LRESULT* pResult)
-{
-	// TODO: Add your control notification handler code here
-	this->hSelected = quizTreeCtrl.GetSelectedItem();
-	
-	*pResult = 0;
-}

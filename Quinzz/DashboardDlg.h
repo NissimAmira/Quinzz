@@ -26,8 +26,4 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	
-	CTreeCtrl quizTreeCtrl;
-	HTREEITEM hSelected;
-	afx_msg void OnNMDblclkQuizTree(NMHDR* pNMHDR, LRESULT* pResult);
-
 };

@@ -29,7 +29,8 @@
 #define IDC_NAME_OF_OWNER               1017
 #define IDC_TREE1                       1024
 #define IDC_QUIZ_TREE                   1024
-#define IDC_MFCBUTTON1                  1026
+#define IDC_DASH_TABS                   1024
+#define IDC_TAB1                        1028
 
 // Next default values for new objects
 // 
@@ -37,7 +38,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        139
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1027
+#define _APS_NEXT_CONTROL_VALUE         1029
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
