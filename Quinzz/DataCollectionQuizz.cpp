@@ -17,6 +17,15 @@ DataCollectionQuizz::DataCollectionQuizz(CString t, int num_of_q) : Quizz(t, num
 	this->setAnswersCounter(tmp);
 }
 
+DataCollectionQuizz::~DataCollectionQuizz()
+{
+	for (int i = 0; i < this->getNumOfQ(); i++) {
+		delete[] this->getAnswersCounter()[i];
+	}
+
+	delete[] this->getAnswersCounter();
+}
+
 void DataCollectionQuizz::setAnswersCounter(int** arr)
 {
 	this->answers_counter = arr;

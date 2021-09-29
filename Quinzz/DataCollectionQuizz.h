@@ -8,7 +8,7 @@ private:
 public:
     DataCollectionQuizz() : Quizz(), answers_counter(nullptr) {};
     DataCollectionQuizz(CString t, int num_of_q);
-    ~DataCollectionQuizz() {};
+    ~DataCollectionQuizz();
 
     void setAnswersCounter(int **arr);
     int** getAnswersCounter() const;

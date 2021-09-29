@@ -189,8 +189,7 @@
     <ClInclude Include="DashboardDlg.h" />
     <ClInclude Include="DataCollectionQuizz.h" />
     <ClInclude Include="framework.h" />
-    <ClInclude Include="gender_b.h" />
-    <ClInclude Include="location_b.h" />
+    <ClInclude Include="GenderQuizz.h" />
     <ClInclude Include="MainDashboard.h" />
     <ClInclude Include="newQuizD.h" />
     <ClInclude Include="NewTestDlg.h" />
@@ -211,8 +210,7 @@
     <ClCompile Include="Answer.cpp" />
     <ClCompile Include="DashboardDlg.cpp" />
     <ClCompile Include="DataCollectionQuizz.cpp" />
-    <ClCompile Include="gender_b.cpp" />
-    <ClCompile Include="location_b.cpp" />
+    <ClCompile Include="GenderQuizz.cpp" />
     <ClCompile Include="MainDashboard.cpp" />
     <ClCompile Include="newQuizD.cpp" />
     <ClCompile Include="NewTestDlg.cpp" />

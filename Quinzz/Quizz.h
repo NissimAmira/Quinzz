@@ -16,7 +16,7 @@ private:
 public:
 	Quizz() : title(""), num_of_questions(0), questions(nullptr), grades_counter(nullptr) {};
 	Quizz(CString t, int num_of_q);
-	~Quizz() { delete[] this->questions; };
+	~Quizz() { delete[] this->questions; delete[] this->grades_counter;};
 
 	void setTitle(CString t);
 	void setNumOfQuestions(int n);
