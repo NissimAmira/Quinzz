@@ -31,6 +31,18 @@
     <Filter Include="Source Files\Quizz">
       <UniqueIdentifier>{2baf3574-fd05-4995-964d-ea6440d0eb4f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Quizz components">
+      <UniqueIdentifier>{0cffb622-9644-4451-9561-e722ad9946eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Quizz Components">
+      <UniqueIdentifier>{3e1601c9-17e8-45da-8d3b-16f34093745c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Quizz\DC quizes">
+      <UniqueIdentifier>{1f816652-74e1-4f0f-a5f4-bde980475d8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Quizz\DC quizes">
+      <UniqueIdentifier>{33095b53-7bde-4ef7-9ac9-c68ecc734055}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Quinzz.h">
@@ -87,15 +99,6 @@
     <ClInclude Include="Quizz.h">
       <Filter>Header Files\Quizz</Filter>
     </ClInclude>
-    <ClInclude Include="Question.h">
-      <Filter>Header Files\Quizz</Filter>
-    </ClInclude>
-    <ClInclude Include="Answers_L.h">
-      <Filter>Header Files\Quizz</Filter>
-    </ClInclude>
-    <ClInclude Include="Answer.h">
-      <Filter>Header Files\Quizz</Filter>
-    </ClInclude>
     <ClInclude Include="NewTestDlg.h">
       <Filter>Header Files\Windows</Filter>
     </ClInclude>
@@ -108,11 +111,26 @@
     <ClInclude Include="DashboardDlg.h">
       <Filter>Header Files\Windows</Filter>
     </ClInclude>
+    <ClInclude Include="Answer.h">
+      <Filter>Header Files\Quizz components</Filter>
+    </ClInclude>
+    <ClInclude Include="Question.h">
+      <Filter>Header Files\Quizz components</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCollectionQuizz.h">
+      <Filter>Header Files\Quizz</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleQuizz.h">
+      <Filter>Header Files\Quizz</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicDCquizz.h">
+      <Filter>Header Files\Quizz\DC quizes</Filter>
+    </ClInclude>
+    <ClInclude Include="RatesCalcDCquizz.h">
+      <Filter>Header Files\Quizz\DC quizes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Quinzz.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="QuinzzDlg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -152,15 +170,6 @@
     <ClCompile Include="Profile.cpp">
       <Filter>Source Files\Profile</Filter>
     </ClCompile>
-    <ClCompile Include="Question.cpp">
-      <Filter>Source Files\Quizz</Filter>
-    </ClCompile>
-    <ClCompile Include="Answers_L.cpp">
-      <Filter>Source Files\Quizz</Filter>
-    </ClCompile>
-    <ClCompile Include="Answer.cpp">
-      <Filter>Source Files\Quizz</Filter>
-    </ClCompile>
     <ClCompile Include="NewTestDlg.cpp">
       <Filter>Source Files\Windows</Filter>
     </ClCompile>
@@ -175,6 +184,27 @@
     </ClCompile>
     <ClCompile Include="DashboardDlg.cpp">
       <Filter>Source Files\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Answer.cpp">
+      <Filter>Source Files\Quizz Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Question.cpp">
+      <Filter>Source Files\Quizz Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Quinzz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleQuizz.cpp">
+      <Filter>Source Files\Quizz</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicDCquizz.cpp">
+      <Filter>Source Files\Quizz\DC quizes</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCollectionQuizz.cpp">
+      <Filter>Source Files\Quizz</Filter>
+    </ClCompile>
+    <ClCompile Include="RatesCalcDCquizz.cpp">
+      <Filter>Source Files\Quizz\DC quizes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
