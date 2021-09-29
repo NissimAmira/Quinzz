@@ -6,8 +6,9 @@ class P_Gender :
     public Profile, gender_b
 {
 public:
-    P_Gender();
-    ~P_Gender();
+    P_Gender() { this->setGender(_T("")); };
+    P_Gender(CString g);
+    ~P_Gender() {};
 
 };
 

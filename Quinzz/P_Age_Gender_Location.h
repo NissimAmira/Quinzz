@@ -12,7 +12,8 @@ class P_Age_Gender_Location :
 
 public:
     P_Age_Gender_Location();
-    ~P_Age_Gender_Location();
+    P_Age_Gender_Location(int a, CString g, CString l);
+    ~P_Age_Gender_Location() {};
 
 
 };

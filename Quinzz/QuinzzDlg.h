@@ -3,6 +3,9 @@
 //
 
 #pragma once
+#include "Owner.h"
+#include "DashboardDlg.h"
+
 
 
 // CQuinzzDlg dialog

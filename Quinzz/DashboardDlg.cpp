@@ -12,27 +12,28 @@
 IMPLEMENT_DYNAMIC(DashboardDlg, CDialogEx)
 
 
-DashboardDlg::DashboardDlg(CWnd* pParent /*=nullptr*/)
+DashboardDlg::DashboardDlg(CString nameOfOwner, CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_DASHBOARD_D, pParent)
 {
-
-
+	this->owner.setName(nameOfOwner);
+	Quizz* q_arr = new Quizz[10];
+	this->owner.setQuizes(q_arr); 
 }
 
 BOOL DashboardDlg::OnInitDialog() {
 	CDialog::OnInitDialog();
 
-	HTREEITEM hItem, hQuiz;
-	CString title = L"Quiz ";
 
-	hItem = quizTreeCtrl.InsertItem(L"Quizes", TVI_ROOT);
-	for (wchar_t i = '0' ; i <= '9' ; i++) {
-		CString
-		hQuiz = quizTreeCtrl.InsertItem(L"Quiz ", hItem);
+	HTREEITEM hOwner, hQuizT, hQuiz;
 	
-	}
+	hOwner = quizTreeCtrl.InsertItem((this->owner.getName()), TVI_ROOT);
+	hQuizT = quizTreeCtrl.InsertItem(L"Quizes", hOwner);
+	hQuiz = quizTreeCtrl.InsertItem(L"New Quiz", hQuizT);
 
+	return (1);
 }
+
+DashboardDlg::
 
 
 
@@ -50,9 +51,18 @@ void DashboardDlg::DoDataExchange(CDataExchange* pDX)
 
 BEGIN_MESSAGE_MAP(DashboardDlg, CDialogEx)
 
+	ON_NOTIFY(NM_DBLCLK, IDC_QUIZ_TREE, &DashboardDlg::OnNMDblclkQuizTree)
 END_MESSAGE_MAP()
 
 
 // DashboardDlg message handlers
 
 
+
+void DashboardDlg::OnNMDblclkQuizTree(NMHDR* pNMHDR, LRESULT* pResult)
+{
+	// TODO: Add your control notification handler code here
+	this->hSelected = quizTreeCtrl.GetSelectedItem();
+	
+	*pResult = 0;
+}

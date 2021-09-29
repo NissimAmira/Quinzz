@@ -22,5 +22,6 @@ public:
     Quizz* getQuizes();
     Quizz getQuizzAtIndex(int index);
     void setTypeId();
+    int numOfQuizes();
 };
 

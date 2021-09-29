@@ -3,15 +3,10 @@
 
 Answer::Answer(bool c, CString a)
 {
-	setFlag(c);
-	setAnswer(a);
+	this->setFlag(c);
+	this->setAnswer(a);
 }
 
-Answer::Answer(const Answer& a)
-{
-	setFlag(a.getFlag());
-	setAnswer(a.getAnswer());
-}
 
 void Answer::setFlag(bool c) 
 {

@@ -5,7 +5,8 @@ class P_Age_Location :
     public P_Age, location_b
 {
     P_Age_Location();
-    ~P_Age_Location();
+    P_Age_Location(int a, CString l);
+    ~P_Age_Location() {};
 
 };
 

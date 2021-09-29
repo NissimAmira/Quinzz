@@ -50,7 +50,6 @@ END_MESSAGE_MAP()
 
 // CQuinzzDlg dialog
 
-Owner owner; // Global owner
 
 
 CQuinzzDlg::CQuinzzDlg(CWnd* pParent /*=nullptr*/)
@@ -164,13 +163,10 @@ HCURSOR CQuinzzDlg::OnQueryDragIcon()
 
 void CQuinzzDlg::OnBnClickedNewTest()
 {
-	Quizz* q_arr = new Quizz[10];
-	owner.setName(nameOfOwner);
-	owner.setQuizes(q_arr);
-	Owner& owner_ref = owner;
-	CDialogEx::OnCancel();
-	NewTestDlg new_test_dlg(NULL, owner_ref);
-	new_test_dlg.DoModal();
+
+	DashboardDlg new_dashboard_dlg(nameOfOwner, NULL);
+	new_dashboard_dlg.DoModal();
+	EndDialog(1);
 }
 
 

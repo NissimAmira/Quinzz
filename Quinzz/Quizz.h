@@ -23,6 +23,7 @@ public:
 	void setNumOfQuestions(int n);
 	void setTypeId(int n);
 	void setQuestionAtIndex(Question q, int index);
+	int getTypeId();
 
 	CString getTitle() const;
 	Question* getQuestions() const;

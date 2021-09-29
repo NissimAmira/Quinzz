@@ -130,7 +130,7 @@ void NewTestDlg::OnBnClickedNextBtn()
 	}
 
 
-	Quizz quiz(NUM_OF_Q, profileTypeID);
+	Quizz quiz(QUIZ_TITLE,NUM_OF_Q, profileTypeID);
 	
 	CDialogEx::OnCancel();
 	QuestionEditor q_editor_dlg(NULL);

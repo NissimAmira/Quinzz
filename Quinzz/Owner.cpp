@@ -29,10 +29,18 @@ void Owner::addNewQuiz(Quizz q)
 
 void Owner::deleteQuiz(int index)
 {
+	Quizz empty;
+	this->getQuizes()[index] = empty;
 }
 
 void Owner::deleteQuiz(Quizz q)
 {
+	Quizz* tmp = this->getQuizes();
+	for (int i = 0; i < 10; i++) {
+		if (tmp[i].getTitle() == q.getTitle()) {
+			this->deleteQuiz(i);
+		};
+	}
 }
 
 Quizz* Owner::getQuizes() {
@@ -46,5 +54,18 @@ Quizz Owner::getQuizzAtIndex(int index) {
 void Owner::setTypeId()
 {
 	this->type_id = 1;
+}
+
+int Owner::numOfQuizes()
+{
+	int counter = 0;
+	for (int i = 0; i < 10; i++)
+	{
+		if (quizes[i].getTypeId() != (-1))
+		{
+			counter++;
+		}
+	}
+	return 0;
 }
 

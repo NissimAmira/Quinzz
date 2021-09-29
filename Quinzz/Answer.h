@@ -7,13 +7,12 @@ using namespace std;
 class Answer
 {
 private:
-	static CString id;
+	//static CString id;
 	bool correct; // T correct; F incorrect;
 	CString answer;
 public:
-	Answer() {};
+	Answer() : answer(""), correct(false) {};
 	Answer(bool c, CString a);
-	Answer(const Answer&);
 	~Answer() {};
 
 	void setFlag(bool c) ;

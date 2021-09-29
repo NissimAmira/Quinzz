@@ -9,7 +9,11 @@ private:
     CString location;
 public: 
 
-    virtual void setLocation(CString) = 0;
+    location_b() : location("") {};
+    location_b(CString l);
+    ~location_b() {};
+
+    void setLocation(CString l);
     CString getLocation();
     bool isIsraeli();
 };

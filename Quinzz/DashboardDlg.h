@@ -1,5 +1,6 @@
 #pragma once
 #include "Quinzz.h"
+#include "QuinzzDlg.h"
 
 // DashboardDlg dialog
 
@@ -8,9 +9,11 @@ class DashboardDlg : public CDialogEx
 	DECLARE_DYNAMIC(DashboardDlg)
 
 public:
-	DashboardDlg(CWnd* pParent = nullptr);   // standard constructor
-	BOOL OnInitDialog();
+	DashboardDlg(CString nameOfOwner, CWnd* pParent = nullptr);  
 	virtual ~DashboardDlg();
+	
+	BOOL OnInitDialog();
+	Owner owner;
 
 // Dialog Data
 #ifdef AFX_DESIGN_TIME
@@ -24,4 +27,7 @@ protected:
 public:
 	
 	CTreeCtrl quizTreeCtrl;
+	HTREEITEM hSelected;
+	afx_msg void OnNMDblclkQuizTree(NMHDR* pNMHDR, LRESULT* pResult);
+
 };
