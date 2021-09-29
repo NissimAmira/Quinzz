@@ -40,6 +40,8 @@ BEGIN_MESSAGE_MAP(NewTestDlg, CDialogEx)
 	ON_EN_CHANGE(IDC_QUIZ_TITLE, &NewTestDlg::OnEnChangeQuizTitle)
 	ON_CBN_SELCHANGE(IDC_NUM_OF_Q, &NewTestDlg::OnCbnSelchangeNumOfQ)
 	ON_BN_CLICKED(IDC_NEXT_BTN, &NewTestDlg::OnBnClickedNextBtn)
+	ON_BN_CLICKED(IDC_GENDER_RADIO, &NewTestDlg::OnBnClickedGenderRadio)
+	ON_BN_CLICKED(IDC_LOCATION_RADIO, &NewTestDlg::OnBnClickedLocationRadio)
 END_MESSAGE_MAP()
 
 
@@ -67,7 +69,19 @@ void NewTestDlg::OnBnClickedNextBtn()
 
 void NewTestDlg::OnBnClickedAgeRadio()
 {
-	
+	this->radioStage = 1;
 }
 
 
+
+
+void NewTestDlg::OnBnClickedGenderRadio()
+{
+	this->radioStage = 2;
+}
+
+
+void NewTestDlg::OnBnClickedLocationRadio()
+{
+	this->radioStage = 3;
+}

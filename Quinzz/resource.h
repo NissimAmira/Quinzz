@@ -52,7 +52,6 @@
 #define IDC_OWNER_NAME_T                1049
 #define IDC_AGE_RADIO                   1051
 #define IDC_GENDER_RADIO                1052
-#define IDC_RADIO3                      1053
 #define IDC_LOCATION_RADIO              1053
 
 // Next default values for new objects

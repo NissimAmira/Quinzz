@@ -38,5 +38,7 @@ public:
 	CButton genderRadio;
 	CButton locationRadio;
 	afx_msg void OnBnClickedAgeRadio();
+	afx_msg void OnBnClickedGenderRadio();
+	afx_msg void OnBnClickedLocationRadio();
 };
 
