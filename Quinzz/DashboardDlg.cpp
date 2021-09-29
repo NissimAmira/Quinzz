@@ -24,11 +24,6 @@ BOOL DashboardDlg::OnInitDialog() {
 	CDialog::OnInitDialog();
 
 
-	HTREEITEM hOwner, hQuizT, hQuiz;
-	
-	hOwner = quizTreeCtrl.InsertItem((this->owner.getName()), TVI_ROOT);
-	hQuizT = quizTreeCtrl.InsertItem(L"Quizes", hOwner);
-	hQuiz = quizTreeCtrl.InsertItem(L"New Quiz", hQuizT);
 
 	return (1);
 }
@@ -45,7 +40,6 @@ DashboardDlg::~DashboardDlg()
 void DashboardDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
-	//  DDX_Control(pDX, IDC_QUIZ_TREE, quizTreeCtrl);
 }
 
 
