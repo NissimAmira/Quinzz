@@ -14,6 +14,7 @@ public:
 	
 	BOOL OnInitDialog();
 	Owner owner;
+	
 
 // Dialog Data
 #ifdef AFX_DESIGN_TIME
