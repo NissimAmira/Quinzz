@@ -93,9 +93,6 @@
     <ClInclude Include="AgeQuizz.h">
       <Filter>Header Files\Quizz\DC quizes</Filter>
     </ClInclude>
-    <ClInclude Include="GenderQuizz.h">
-      <Filter>Header Files\Quizz\DC quizes</Filter>
-    </ClInclude>
     <ClInclude Include="QuinzzDlg.h">
       <Filter>Header Files\Windows</Filter>
     </ClInclude>
@@ -104,6 +101,9 @@
     </ClInclude>
     <ClInclude Include="newQuizD.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GenderQuizz.h">
+      <Filter>Header Files\Quizz\DC quizes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -146,9 +146,6 @@
     <ClCompile Include="AgeQuizz.cpp">
       <Filter>Source Files\Quizz\DC quizes</Filter>
     </ClCompile>
-    <ClCompile Include="GenderQuizz.cpp">
-      <Filter>Source Files\Quizz\DC quizes</Filter>
-    </ClCompile>
     <ClCompile Include="QuinzzDlg.cpp">
       <Filter>Source Files\Windows</Filter>
     </ClCompile>
@@ -157,6 +154,9 @@
     </ClCompile>
     <ClCompile Include="newQuizD.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GenderQuizz.cpp">
+      <Filter>Source Files\Quizz\DC quizes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
