@@ -8,32 +8,29 @@ using namespace std;
 class Quizz
 {
 private:
-	//static int id;
 	CString title;
 	int num_of_questions;
 	Question *questions;
-	int typeID;
-
-	//Empty data types - the needed data type will get value
+	int *grades_counter;
 
 public:
-	Quizz() : title(""), num_of_questions(0), questions(nullptr), typeID(-1) {};
-	
-	Quizz(CString t, int num_of_q, int typeP);
-	//~Quizz() { delete(this->questions); };
+	Quizz() : title(""), num_of_questions(0), questions(nullptr), grades_counter(nullptr) {};
+	Quizz(CString t, int num_of_q);
+	~Quizz() { delete[] this->questions; };
 
 	void setTitle(CString t);
-	void setQuestions(Question* q);
 	void setNumOfQuestions(int n);
-	void setTypeId(int n);
+	void setQuestions(Question* q);
 	void setQuestionAtIndex(Question q, int index);
-	void setDataType();
+	void setGrades(int* grades);
+	void setCountForGrade(int grade);
 
-	int getTypeId();
+	virtual void runQuiz() {};
+
 	CString getTitle() const;
 	Question* getQuestions() const;
+	int getNumOfQ() const;
 	Question getQuestionAtIndex(int index) const;
-	Profile *getDataProfile();
-	friend class Profile;
+
 };
 

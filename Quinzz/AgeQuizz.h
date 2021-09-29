@@ -1,7 +1,10 @@
 #pragma once
 #include "DataCollectionQuizz.h"
-class BasicDCquizz :
+class AgeQuizz :
     public DataCollectionQuizz
 {
+private:
+    int age[];
+public:
 };
 

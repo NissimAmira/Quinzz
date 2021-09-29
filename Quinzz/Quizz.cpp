@@ -4,13 +4,17 @@
 #include "P_Age_Gender_Location.h"
 
 
-Quizz::Quizz(CString t, int num_of_q, int typeP) 
+Quizz::Quizz(CString t, int num_of_q) 
 {
 	this->setTitle(t);
 	this->setNumOfQuestions(num_of_q);
-	this->setTypeId(typeP);
 	Question* q_arr = new Question[num_of_q];
 	this->setQuestions(q_arr);
+	int* g = new int[100 / num_of_q];
+	for (int i = 0; i < num_of_q; i++) {
+		g[i] = 0;
+	}
+	this->setGrades(g);
 }
 
 void Quizz::setTitle(CString t)
@@ -28,45 +32,22 @@ void Quizz::setNumOfQuestions(int n)
 	this->num_of_questions = n;
 }
 
-void Quizz::setTypeId(int n)
-{
-	this->typeID = n;
-}
 
 void Quizz::setQuestionAtIndex(Question q, int index) 
 {
 	this->questions[index] = q;
 }
 
-void Quizz::setDataType()
+void Quizz::setGrades(int* grades)
 {
-	switch (this->getTypeId()) {
-		
-	case 8: 
-		P_Age_Gender_Location p();
-		break;
-	case 9:
-		break;
-	case 10: 
-		break;
-	case 11:
-		break;
-	case 12:
-		break;
-	case 13:
-		break;
-	case 14: 
-		break;
-	case 15:
-		break;
-
-	}
+	this->grades_counter = grades;
 }
 
-int Quizz::getTypeId()
+void Quizz::setCountForGrade(int grade)
 {
-	return this->typeID;
+	this->grades_counter[100 / grade]++;
 }
+
 
 CString Quizz::getTitle() const
 {
@@ -76,6 +57,11 @@ CString Quizz::getTitle() const
 Question* Quizz:: getQuestions() const {
 	return this->questions;
 
+}
+
+int Quizz::getNumOfQ() const
+{
+	return this->num_of_questions;
 }
 
 Question Quizz::getQuestionAtIndex(int index) const{

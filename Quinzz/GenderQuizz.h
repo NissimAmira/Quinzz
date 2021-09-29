@@ -1,7 +1,9 @@
 #pragma once
 #include "DataCollectionQuizz.h"
-class RatesCalcDCquizz :
+class GenderQuizz :
     public DataCollectionQuizz
 {
+private:
+public:
 };
 

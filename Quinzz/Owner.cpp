@@ -61,10 +61,10 @@ int Owner::numOfQuizes()
 	int counter = 0;
 	for (int i = 0; i < 10; i++)
 	{
-		if (quizes[i].getTypeId() != (-1))
+		/*if (quizes[i].getTypeId() != (-1))
 		{
 			counter++;
-		}
+		}*/
 	}
 	return 0;
 }

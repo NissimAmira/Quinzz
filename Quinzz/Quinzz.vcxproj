@@ -184,9 +184,8 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="age_b.h" />
+    <ClInclude Include="AgeQuizz.h" />
     <ClInclude Include="Answer.h" />
-    <ClInclude Include="BasicDCquizz.h" />
     <ClInclude Include="DashboardDlg.h" />
     <ClInclude Include="DataCollectionQuizz.h" />
     <ClInclude Include="framework.h" />
@@ -198,27 +197,18 @@
     <ClInclude Include="Owner.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Profile.h" />
-    <ClInclude Include="P_Age.h" />
-    <ClInclude Include="P_Age_Gender.h" />
-    <ClInclude Include="P_Age_Gender_Location.h" />
-    <ClInclude Include="P_Age_Location.h" />
-    <ClInclude Include="P_Gender.h" />
-    <ClInclude Include="P_Gender_Location.h" />
-    <ClInclude Include="P_Location.h" />
     <ClInclude Include="Question.h" />
     <ClInclude Include="QuestionEditor.h" />
     <ClInclude Include="Quinzz.h" />
     <ClInclude Include="QuinzzDlg.h" />
-    <ClInclude Include="RatesCalcDCquizz.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SimpleQuizz.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Quizz.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="age_b.cpp" />
+    <ClCompile Include="AgeQuizz.cpp" />
     <ClCompile Include="Answer.cpp" />
-    <ClCompile Include="BasicDCquizz.cpp" />
     <ClCompile Include="DashboardDlg.cpp" />
     <ClCompile Include="DataCollectionQuizz.cpp" />
     <ClCompile Include="gender_b.cpp" />
@@ -234,19 +224,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Profile.cpp" />
-    <ClCompile Include="P_Age.cpp" />
-    <ClCompile Include="P_Age_Gender.cpp" />
-    <ClCompile Include="P_Age_Gender_Location.cpp" />
-    <ClCompile Include="P_Age_Location.cpp" />
-    <ClCompile Include="P_Gender.cpp" />
-    <ClCompile Include="P_Gender_Location.cpp" />
-    <ClCompile Include="P_Location.cpp" />
     <ClCompile Include="Question.cpp" />
     <ClCompile Include="QuestionEditor.cpp" />
     <ClCompile Include="Quinzz.cpp" />
     <ClCompile Include="QuinzzDlg.cpp" />
     <ClCompile Include="Quizz.cpp" />
-    <ClCompile Include="RatesCalcDCquizz.cpp" />
     <ClCompile Include="SimpleQuizz.cpp" />
   </ItemGroup>
   <ItemGroup>
