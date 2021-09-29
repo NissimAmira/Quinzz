@@ -23,6 +23,7 @@ public:
 	void setQuestions(Question* q);
 	void setQuestionAtIndex(Question q, int index);
 	void setGrades(int* grades);
+	void setCountForGrade(int grade);
 
 	virtual void runQuiz() {};
 

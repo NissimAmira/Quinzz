@@ -10,6 +10,11 @@ Quizz::Quizz(CString t, int num_of_q)
 	this->setNumOfQuestions(num_of_q);
 	Question* q_arr = new Question[num_of_q];
 	this->setQuestions(q_arr);
+	int* g = new int[100 / num_of_q];
+	for (int i = 0; i < num_of_q; i++) {
+		g[i] = 0;
+	}
+	this->setGrades(g);
 }
 
 void Quizz::setTitle(CString t)
@@ -36,6 +41,11 @@ void Quizz::setQuestionAtIndex(Question q, int index)
 void Quizz::setGrades(int* grades)
 {
 	this->grades_counter = grades;
+}
+
+void Quizz::setCountForGrade(int grade)
+{
+	this->grades_counter[100 / grade]++;
 }
 
 

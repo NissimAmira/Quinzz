@@ -12,7 +12,7 @@ private:
 public:
     Owner() : quizes(nullptr) { this->setTypeId(); };
     Owner(Quizz* q, CString n);
-    ~Owner() { delete(this->quizes); };
+    ~Owner() { delete[] this->quizes; };
 
     void setQuizes(Quizz* q);
     void setQuizAtIndex(Quizz q, int index);

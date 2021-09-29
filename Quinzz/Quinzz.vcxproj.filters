@@ -63,36 +63,6 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="P_Age.h">
-      <Filter>Header Files\Profile</Filter>
-    </ClInclude>
-    <ClInclude Include="age_b.h">
-      <Filter>Header Files\Profile</Filter>
-    </ClInclude>
-    <ClInclude Include="gender_b.h">
-      <Filter>Header Files\Profile</Filter>
-    </ClInclude>
-    <ClInclude Include="location_b.h">
-      <Filter>Header Files\Profile</Filter>
-    </ClInclude>
-    <ClInclude Include="P_Age_Gender.h">
-      <Filter>Header Files\Profile</Filter>
-    </ClInclude>
-    <ClInclude Include="P_Age_Gender_Location.h">
-      <Filter>Header Files\Profile</Filter>
-    </ClInclude>
-    <ClInclude Include="P_Age_Location.h">
-      <Filter>Header Files\Profile</Filter>
-    </ClInclude>
-    <ClInclude Include="P_Gender.h">
-      <Filter>Header Files\Profile</Filter>
-    </ClInclude>
-    <ClInclude Include="P_Gender_Location.h">
-      <Filter>Header Files\Profile</Filter>
-    </ClInclude>
-    <ClInclude Include="P_Location.h">
-      <Filter>Header Files\Profile</Filter>
-    </ClInclude>
     <ClInclude Include="Profile.h">
       <Filter>Header Files\Profile</Filter>
     </ClInclude>
@@ -136,36 +106,6 @@
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="age_b.cpp">
-      <Filter>Source Files\Profile</Filter>
-    </ClCompile>
-    <ClCompile Include="gender_b.cpp">
-      <Filter>Source Files\Profile</Filter>
-    </ClCompile>
-    <ClCompile Include="location_b.cpp">
-      <Filter>Source Files\Profile</Filter>
-    </ClCompile>
-    <ClCompile Include="P_Age.cpp">
-      <Filter>Source Files\Profile</Filter>
-    </ClCompile>
-    <ClCompile Include="P_Age_Gender.cpp">
-      <Filter>Source Files\Profile</Filter>
-    </ClCompile>
-    <ClCompile Include="P_Age_Gender_Location.cpp">
-      <Filter>Source Files\Profile</Filter>
-    </ClCompile>
-    <ClCompile Include="P_Age_Location.cpp">
-      <Filter>Source Files\Profile</Filter>
-    </ClCompile>
-    <ClCompile Include="P_Gender.cpp">
-      <Filter>Source Files\Profile</Filter>
-    </ClCompile>
-    <ClCompile Include="P_Gender_Location.cpp">
-      <Filter>Source Files\Profile</Filter>
-    </ClCompile>
-    <ClCompile Include="P_Location.cpp">
-      <Filter>Source Files\Profile</Filter>
     </ClCompile>
     <ClCompile Include="Profile.cpp">
       <Filter>Source Files\Profile</Filter>

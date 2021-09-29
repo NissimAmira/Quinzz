@@ -3,5 +3,7 @@
 class GenderQuizz :
     public DataCollectionQuizz
 {
+private:
+public:
 };
 

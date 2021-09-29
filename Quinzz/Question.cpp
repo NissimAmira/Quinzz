@@ -6,7 +6,7 @@
 Question::Question(CString q)
 {
 	this->setQuestion(q);
-	this->setAnswers(nullptr);
+	//this->setAnswers(nullptr);
 }
 
 Question::Question(CString q, Answer* a)
