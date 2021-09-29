@@ -17,15 +17,25 @@ void Owner::setQuizAtIndex(Quizz q, int index) {
 	this->quizes[index] = q;
 }
 
-void Owner::addNewQuiz()
+void Owner::addNewQuiz(Quizz q)
+{
+	for (int i = 0; i < 10; i++) {
+		if (this->getQuizzAtIndex(i).getTitle() == "") {
+			this->setQuizAtIndex(q,i);
+			break;
+		}
+	}
+}
+
+void Owner::deleteQuiz(int index)
 {
 }
 
-void Owner::deleteQuiz()
+void Owner::deleteQuiz(Quizz q)
 {
 }
 
-Quizz* Owner::getQuiz() {
+Quizz* Owner::getQuizes() {
 	return this->quizes;
 }
 
