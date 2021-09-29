@@ -203,6 +203,7 @@
     <ClInclude Include="P_Gender_Location.h" />
     <ClInclude Include="P_Location.h" />
     <ClInclude Include="Question.h" />
+    <ClInclude Include="QuestionEditor.h" />
     <ClInclude Include="Quinzz.h" />
     <ClInclude Include="QuinzzDlg.h" />
     <ClInclude Include="Resource.h" />
@@ -233,6 +234,7 @@
     <ClCompile Include="P_Gender_Location.cpp" />
     <ClCompile Include="P_Location.cpp" />
     <ClCompile Include="Question.cpp" />
+    <ClCompile Include="QuestionEditor.cpp" />
     <ClCompile Include="Quinzz.cpp" />
     <ClCompile Include="QuinzzDlg.cpp" />
     <ClCompile Include="Quizz.cpp" />

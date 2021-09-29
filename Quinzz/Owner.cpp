@@ -17,11 +17,34 @@ void Owner::setQuizAtIndex(Quizz q, int index) {
 	this->quizes[index] = q;
 }
 
-Quizz* Owner::getQuiz() {
+void Owner::addNewQuiz(Quizz q)
+{
+	for (int i = 0; i < 10; i++) {
+		if (this->getQuizzAtIndex(i).getTitle() == "") {
+			this->setQuizAtIndex(q,i);
+			break;
+		}
+	}
+}
+
+void Owner::deleteQuiz(int index)
+{
+}
+
+void Owner::deleteQuiz(Quizz q)
+{
+}
+
+Quizz* Owner::getQuizes() {
 	return this->quizes;
 }
 
 Quizz Owner::getQuizzAtIndex(int index) {
 	return this->quizes[index];
+}
+
+void Owner::setTypeId()
+{
+	this->type_id = 1;
 }
 

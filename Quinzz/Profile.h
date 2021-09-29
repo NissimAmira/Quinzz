@@ -9,9 +9,10 @@ class Profile
 private:
 	static int profiles_counter;
 	CString name;
-	int type_id;
 
 public:
+
+	int type_id;
 
 	Profile() : type_id(1) {};
 	Profile(CString n);

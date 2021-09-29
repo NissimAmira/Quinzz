@@ -5,19 +5,30 @@
 #include "Quinzz.h"
 #include "NewTestDlg.h"
 #include "afxdialogex.h"
-
+#include "QuestionEditor.h"
+#include "Owner.h"
 
 // NewTestDlg dialog
 
 IMPLEMENT_DYNAMIC(NewTestDlg, CDialogEx)
 
-NewTestDlg::NewTestDlg(CWnd* pParent /*=nullptr*/)
+/*NewTestDlg::NewTestDlg(CWnd* pParent)
 	: CDialogEx(IDD_NEW_TEST, pParent)
 	, NAME_BOX(_T(""))
 	, NUM_OF_Q(0)
 	, QUIZ_TITLE(_T(""))
 {
+	
+}
+*/
 
+NewTestDlg::NewTestDlg(CWnd* pParent, Owner& o) 
+	: CDialogEx(IDD_NEW_TEST, pParent)
+	, NAME_BOX(_T(""))
+	, NUM_OF_Q(0)
+	, QUIZ_TITLE(_T(""))
+	, owner(o)
+{
 }
 
 NewTestDlg::~NewTestDlg()
@@ -100,6 +111,9 @@ void NewTestDlg::OnBnClickedLocationCb()
 
 void NewTestDlg::OnBnClickedNextBtn()
 {
+
+	// Calculate the correct data-profile type to be created
+
 	profileTypeID *= 2;
 	if (!GENDER_CB.GetCheck()) {
 		profileTypeID++;
@@ -116,7 +130,11 @@ void NewTestDlg::OnBnClickedNextBtn()
 	}
 
 
-
+	Quizz quiz(NUM_OF_Q, profileTypeID);
+	
+	CDialogEx::OnCancel();
+	QuestionEditor q_editor_dlg(NULL);
+	q_editor_dlg.DoModal();
 
 	
 }

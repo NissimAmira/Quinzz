@@ -99,11 +99,14 @@
     <ClInclude Include="NewTestDlg.h">
       <Filter>Header Files\Windows</Filter>
     </ClInclude>
-    <ClInclude Include="DashboardDlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Owner.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="DashboardDlg.h">
+      <Filter>Header Files\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestionEditor.h">
+      <Filter>Header Files\Windows</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -165,10 +168,13 @@
       <Filter>Source Files\Quizz</Filter>
     </ClCompile>
     <ClCompile Include="DashboardDlg.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Windows</Filter>
     </ClCompile>
     <ClCompile Include="Owner.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestionEditor.cpp">
+      <Filter>Source Files\Windows</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

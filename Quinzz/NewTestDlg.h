@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Owner.h"
 
 // NewTestDlg dialog
 
@@ -8,7 +8,9 @@ class NewTestDlg : public CDialogEx
 	DECLARE_DYNAMIC(NewTestDlg)
 
 public:
-	NewTestDlg(CWnd* pParent = nullptr);   // standard constructor
+
+	//NewTestDlg(CWnd* pParent = nullptr);   // standard constructor
+	NewTestDlg(CWnd* pParent, Owner &owner);
 	virtual ~NewTestDlg();
 
 // Dialog Data
@@ -25,8 +27,8 @@ public:
 	CString NAME_BOX;
 	int profileTypeID = 1;
 	afx_msg void OnEnChangeNameBox();
-	//	CComboBox NUM_OF_Q;
-	int NUM_OF_Q;
+	Owner& owner;
+	int NUM_OF_Q; //CComboBox NUM_OF_Q;
 	CString QUIZ_TITLE;
 	CButton NAME_CB;
 	CButton GENDER_CB;

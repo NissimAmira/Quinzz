@@ -13,6 +13,7 @@
 #define ID_BIG_TITLE                    130
 #define IDD_DASHBOARD_D                 133
 #define IDD_QESTION_EDITOR              137
+#define IDD_QUESTION_EDITOR             137
 #define IDC_BUTTON1                     1000
 #define IDC_NEW_TEST                    1000
 #define IDC_NEXT_BTN                    1000

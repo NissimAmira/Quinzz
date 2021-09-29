@@ -50,6 +50,7 @@ END_MESSAGE_MAP()
 
 // CQuinzzDlg dialog
 
+Owner owner; // Global owner
 
 
 CQuinzzDlg::CQuinzzDlg(CWnd* pParent /*=nullptr*/)
@@ -81,9 +82,7 @@ BOOL CQuinzzDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
 
-	// Add "About..." menu item to system menu.
 
-	// IDM_ABOUTBOX must be in the system command range.
 	ASSERT((IDM_ABOUTBOX & 0xFFF0) == IDM_ABOUTBOX);
 	ASSERT(IDM_ABOUTBOX < 0xF000);
 
@@ -165,11 +164,13 @@ HCURSOR CQuinzzDlg::OnQueryDragIcon()
 
 void CQuinzzDlg::OnBnClickedNewTest()
 {
-	CDialogEx::OnCancel();
-	NewTestDlg new_test_dlg(NULL);
-	new_test_dlg.DoModal();
+	Quizz* q_arr = new Quizz[10];
 	owner.setName(nameOfOwner);
-
+	owner.setQuizes(q_arr);
+	Owner& owner_ref = owner;
+	CDialogEx::OnCancel();
+	NewTestDlg new_test_dlg(NULL, owner_ref);
+	new_test_dlg.DoModal();
 }
 
 
