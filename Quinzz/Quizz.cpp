@@ -2,28 +2,34 @@
 #include "Quizz.h"
 
 
-Quizz::Quizz(int num_of_q, int typeP) {
+Quizz::Quizz(CString t, int num_of_q, int typeP) 
+{
 	
 }
 
 void Quizz::setTitle(CString t)
 {
+	this->title = t;
 }
 
-void Quizz::setQuestions(Question* q) {
-	//this->questions = q;
+void Quizz::setQuestions(Question* q) 
+{
+	this->questions = q;
 }
 
 void Quizz::setNumOfQuestions(int n)
 {
+	this->num_of_questions = n;
 }
 
 void Quizz::setTypeId(int n)
 {
+	this->typeID = n;
 }
 
-void Quizz::setQuestionAtIndex(Question q, int index) {
-
+void Quizz::setQuestionAtIndex(Question q, int index) 
+{
+	this->questions[index] = q;
 }
 
 CString Quizz::getTitle() const

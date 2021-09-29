@@ -15,7 +15,7 @@ private:
 
 public:
 	Quizz() : title(""), num_of_questions(0), questions(nullptr), typeID(-1) {};
-	Quizz(int num_of_q, int typeP);
+	Quizz(CString t, int num_of_q, int typeP);
 	~Quizz() { delete this->questions; };
 
 	void setTitle(CString t);
