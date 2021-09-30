@@ -72,28 +72,6 @@
 #define IDC_NUM_QUESTIONS               1059
 #define IDC_SIMPLE_QUIZ_RADIO           1060
 #define IDC_DCQUIZ_RADIO                1061
-#define IDC_COMBO1                      1064
-#define IDC_STATIC_Q_INDEX              1066
-#define IDC_PREVIOUS                    1067
-#define IDC_Q_TEXT                      1068
-#define IDC_STATIC_Q_TEXT               1069
-#define IDC_STATIC_A_1                  1070
-#define IDC_TEXT_A1                     1071
-#define IDC_CHECK_A1                    1072
-#define IDC_STATIC_A_2                  1073
-#define IDC_STATIC_NAME                 1073
-#define IDC_TEXT_A3                     1074
-#define IDC_CHECK_A2                    1075
-#define IDC_STATIC_A_3                  1076
-#define IDC_TEST_A2                     1077
-#define IDC_CHECK_A3                    1078
-#define IDC_TEXT_A4                     1079
-#define IDC_STATIC_A_4                  1080
-#define IDC_CHECK_A4                    1081
-#define IDC_DONE                        1082
-#define IDC_STATIC_Q_TITLE              1083
-#define IDC_STATIC_N_OF_Q               1084
-#define IDC_STATIC_INT_OF_Q             1085
 
 // Next default values for new objects
 // 
@@ -101,7 +79,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        149
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1086
+#define _APS_NEXT_CONTROL_VALUE         1064
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

@@ -32,5 +32,13 @@ public:
 	afx_msg void OnBnClickedDcquizRadio();
 	afx_msg void OnEnChangeQuizTitle();
 	afx_msg void OnCbnSelchangeNumQuestions();
+<<<<<<< HEAD
+<<<<<<< HEAD
+	CButton AgeRadio;
+	CButton genderRadio;
 	afx_msg void OnBnClickedCreateQuizBtn();
+=======
+>>>>>>> parent of e1bdc05 (update)
+=======
+>>>>>>> parent of e1bdc05 (update)
 };
