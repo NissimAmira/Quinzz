@@ -4,6 +4,7 @@
 #include "pch.h"
 #include "Quinzz.h"
 #include "runQuizzDlgMain.h"
+#include "DashboardDlg.h"
 #include "afxdialogex.h"
 
 
@@ -33,6 +34,7 @@ void runQuizzDlgMain::DoDataExchange(CDataExchange* pDX)
 
 BEGIN_MESSAGE_MAP(runQuizzDlgMain, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_START, &runQuizzDlgMain::OnBnClickedButtonStart)
+	ON_BN_CLICKED(IDC_BUTTON_EXIT, &runQuizzDlgMain::OnBnClickedButtonExit)
 END_MESSAGE_MAP()
 
 
@@ -42,4 +44,13 @@ END_MESSAGE_MAP()
 void runQuizzDlgMain::OnBnClickedButtonStart()
 {
 
+}
+
+
+void runQuizzDlgMain::OnBnClickedButtonExit()
+{
+	CDialogEx::OnCancel();
+	DashboardDlg dashboard(NULL);
+	//QuestionEditor q_editor_dlg(&owner,&quizz, NULL);
+	dashboard.DoModal();
 }

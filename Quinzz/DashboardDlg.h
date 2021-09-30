@@ -11,6 +11,7 @@ class DashboardDlg : public CDialogEx
 	DECLARE_DYNAMIC(DashboardDlg)
 
 public:
+	DashboardDlg(CWnd* pParent=nullptr);   // standard constructor
 	DashboardDlg(CWnd* pParent, CString ownerName);   // standard constructor
 	virtual ~DashboardDlg();
 	Owner owner;

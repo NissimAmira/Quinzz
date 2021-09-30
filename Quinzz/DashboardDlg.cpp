@@ -12,6 +12,13 @@
 
 IMPLEMENT_DYNAMIC(DashboardDlg, CDialogEx)
 
+DashboardDlg::DashboardDlg(CWnd* pParent)
+	: CDialogEx(IDD_DASHBOARD_DIALOG, pParent)
+	, ownerNameT(_T(""))
+{
+	Quizz* quizes = new Quizz[10];
+	this->owner.setQuizes(quizes);
+}
 DashboardDlg::DashboardDlg(CWnd* pParent, CString ownerName)
 	: CDialogEx(IDD_DASHBOARD_DIALOG, pParent)
 	, ownerNameT(_T(""))
