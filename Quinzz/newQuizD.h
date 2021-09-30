@@ -33,4 +33,5 @@ public:
 	afx_msg void OnCbnSelchangeNumQuestions();
 	CButton AgeRadio;
 	CButton genderRadio;
+	afx_msg void OnBnClickedCreateQuizBtn();
 };
