@@ -62,6 +62,9 @@
 #define IDC_NUM_QUESTIONS               1059
 #define IDC_SIMPLE_QUIZ_RADIO           1060
 #define IDC_DCQUIZ_RADIO                1061
+#define IDC_RADIO1_AGE                  1064
+#define IDC_RADIO2                      1065
+#define IDC_RADIO2_GENDER               1065
 
 // Next default values for new objects
 // 
@@ -69,7 +72,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        147
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1064
+#define _APS_NEXT_CONTROL_VALUE         1066
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

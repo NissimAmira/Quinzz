@@ -10,7 +10,7 @@ class newQuizD : public CDialogEx
 public:
 	newQuizD(CWnd* pParent = nullptr);   // standard constructor
 	virtual ~newQuizD();
-
+	
 // Dialog Data
 #ifdef AFX_DESIGN_TIME
 	enum { IDD = IDD_NEW_QUIZ };
@@ -26,9 +26,10 @@ public:
 	int numOfQ;
 	CButton simpleRadio;
 	CButton dcRadio;
-	CButton ageRadio;
-	CButton genderRadio;
+
 	afx_msg void OnBnClickedDcquizRadio();
 	afx_msg void OnEnChangeQuizTitle();
 	afx_msg void OnCbnSelchangeNumQuestions();
+	CButton AgeRadio;
+	CButton genderRadio;
 };
