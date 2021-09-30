@@ -16,6 +16,7 @@
 #define IDD_DASHBOARD_DIALOG            140
 #define IDD_NEW_DASHBOARD               142
 #define IDD_NEW_QUIZ                    144
+#define IDD_RUN_QUIZ_MAIN               147
 #define IDC_BUTTON1                     1000
 #define IDC_NEW_TEST                    1000
 #define IDC_NEXT_BTN                    1000
@@ -24,6 +25,7 @@
 #define IDC_CREATE_QUIZ                 1000
 #define IDC_CREATE_QUIZ_BTN             1000
 #define IDC_NEXT                        1000
+#define IDC_BUTTON_START                1000
 #define IDC_NEW_QUIZ_BTN2               1001
 #define IDC_NEW_QUIZ                    1001
 #define IDC_BIO_L1                      1002
@@ -38,11 +40,18 @@
 #define IDC_NEW_QUIZ_BTN8               1007
 #define IDC_NEW_QUIZ_BTN9               1008
 #define IDC_NEW_QUIZ_BTN10              1009
+#define IDC_NEW_QUIZ_BTN11              1010
 #define IDC_NUM_OF_Q                    1011
+#define IDC_NEW_QUIZ_BTN12              1011
 #define IDC_NAME_CB                     1012
+#define IDC_NEW_QUIZ_BTN13              1012
 #define IDC_AGE_CB                      1013
+#define IDC_NEW_QUIZ_BTN14              1013
 #define IDC_GENDER_CB                   1014
+#define IDC_NEW_QUIZ_BTN15              1014
 #define IDC_LOCATION_CB                 1015
+#define IDC_NEW_QUIZ_BTN16              1015
+#define IDC_NEW_QUIZ_BTN_RUN9           1015
 #define IDC_NAME_OF_OWNER               1017
 #define IDC_TREE1                       1024
 #define IDC_QUIZ_TREE                   1024
@@ -81,16 +90,18 @@
 #define IDC_TEXT_A4                     1079
 #define IDC_STATIC_A_4                  1080
 #define IDC_CHECK_A4                    1081
-#define IDC_BUTTON3                     1082
 #define IDC_DONE                        1082
+#define IDC_STATIC_Q_TITLE              1083
+#define IDC_STATIC_N_OF_Q               1084
+#define IDC_STATIC_INT_OF_Q             1085
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        147
+#define _APS_NEXT_RESOURCE_VALUE        149
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1083
+#define _APS_NEXT_CONTROL_VALUE         1086
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

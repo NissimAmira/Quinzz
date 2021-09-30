@@ -201,6 +201,7 @@
     <ClInclude Include="Quinzz.h" />
     <ClInclude Include="QuinzzDlg.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="runQuizzDlgMain.h" />
     <ClInclude Include="SimpleQuizz.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Quizz.h" />
@@ -227,6 +228,7 @@
     <ClCompile Include="Quinzz.cpp" />
     <ClCompile Include="QuinzzDlg.cpp" />
     <ClCompile Include="Quizz.cpp" />
+    <ClCompile Include="runQuizzDlgMain.cpp" />
     <ClCompile Include="SimpleQuizz.cpp" />
   </ItemGroup>
   <ItemGroup>
