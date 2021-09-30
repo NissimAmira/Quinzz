@@ -40,6 +40,7 @@ BEGIN_MESSAGE_MAP(newQuizD, CDialogEx)
 	ON_EN_CHANGE(IDC_QUIZ_TITLE, &newQuizD::OnEnChangeQuizTitle)
 	ON_EN_CHANGE(IDC_QUIZ_TITLE, &newQuizD::OnEnChangeQuizTitle)
 	ON_CBN_SELCHANGE(IDC_NUM_QUESTIONS, &newQuizD::OnCbnSelchangeNumQuestions)
+	ON_BN_CLICKED(IDC_CREATE_QUIZ_BTN, &newQuizD::OnBnClickedCreateQuizBtn)
 END_MESSAGE_MAP()
 
 
@@ -60,9 +61,11 @@ void newQuizD::OnCbnSelchangeNumQuestions()
 
 void newQuizD::OnBnClickedDcquizRadio()
 {
-
+	UpdateData(TRUE);
 }
 
 
-
-
+void newQuizD::OnBnClickedCreateQuizBtn()
+{
+	
+}

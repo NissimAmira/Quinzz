@@ -31,4 +31,5 @@ public:
 	afx_msg void OnBnClickedDcquizRadio();
 	afx_msg void OnEnChangeQuizTitle();
 	afx_msg void OnCbnSelchangeNumQuestions();
+	afx_msg void OnBnClickedCreateQuizBtn();
 };

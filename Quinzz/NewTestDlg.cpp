@@ -69,7 +69,7 @@ void NewTestDlg::OnBnClickedNextBtn()
 
 void NewTestDlg::OnBnClickedAgeRadio()
 {
-	this->radioStage = 1;
+	//this->radioStage = 1;
 }
 
 
@@ -77,11 +77,11 @@ void NewTestDlg::OnBnClickedAgeRadio()
 
 void NewTestDlg::OnBnClickedGenderRadio()
 {
-	this->radioStage = 2;
+	//this->radioStage = 2;
 }
 
 
 void NewTestDlg::OnBnClickedLocationRadio()
 {
-	this->radioStage = 3;
+	//this->radioStage = 3;
 }
