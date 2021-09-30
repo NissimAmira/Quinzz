@@ -4,8 +4,9 @@
 #include "pch.h"
 #include "Quinzz.h"
 #include "DashboardDlg.h"
+#include "runQuizzDlgMain.h"
 #include "afxdialogex.h"
-#include "NewTestDlg.h"
+#include "newQuizD.h"
 
 // DashboardDlg dialog
 
@@ -39,21 +40,22 @@ void DashboardDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_NEW_QUIZ_BTN8, newQuizBtn8);
 	DDX_Control(pDX, IDC_NEW_QUIZ_BTN9, newQuizBtn9);
 	DDX_Control(pDX, IDC_NEW_QUIZ_BTN10, newQuizBtn10);
+
 }
 
 
 BEGIN_MESSAGE_MAP(DashboardDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_NEW_QUIZ_BTN1, &DashboardDlg::OnBnClickedNewQuizBtn1)
+	ON_BN_CLICKED(IDC_NEW_QUIZ_BTN_RUN9, &DashboardDlg::OnBnClickedNewQuizBtnRun9)
 END_MESSAGE_MAP()
 
 
 // DashboardDlg message handlers
 
 
-
 void DashboardDlg::newQuiz(int quizNum, Owner& o)
 {
-	NewTestDlg newQuiz(o.getQuizzAtIndex(quizNum), nullptr);
+	newQuizD newQuiz(o.getQuizzAtIndex(quizNum), nullptr);
 	newQuiz.DoModal();
 
 }
@@ -64,4 +66,13 @@ void DashboardDlg::OnBnClickedNewQuizBtn1()
 	newQuiz(1, owner);
 
 
+}
+
+
+void DashboardDlg::OnBnClickedNewQuizBtnRun9()
+{
+	CDialogEx::OnCancel();
+	runQuizzDlgMain run_quiz(Quizz(),NULL);
+	//QuestionEditor q_editor_dlg(&owner,&quizz, NULL);
+	run_quiz.DoModal();
 }
