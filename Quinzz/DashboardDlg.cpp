@@ -5,7 +5,7 @@
 #include "Quinzz.h"
 #include "DashboardDlg.h"
 #include "afxdialogex.h"
-#include "NewTestDlg.h"
+#include "newQuizD.h"
 
 // DashboardDlg dialog
 
@@ -39,6 +39,7 @@ void DashboardDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_NEW_QUIZ_BTN8, newQuizBtn8);
 	DDX_Control(pDX, IDC_NEW_QUIZ_BTN9, newQuizBtn9);
 	DDX_Control(pDX, IDC_NEW_QUIZ_BTN10, newQuizBtn10);
+
 }
 
 
@@ -50,10 +51,9 @@ END_MESSAGE_MAP()
 // DashboardDlg message handlers
 
 
-
 void DashboardDlg::newQuiz(int quizNum, Owner& o)
 {
-	NewTestDlg newQuiz(o.getQuizzAtIndex(quizNum), nullptr);
+	newQuizD newQuiz(o.getQuizzAtIndex(quizNum), nullptr);
 	newQuiz.DoModal();
 
 }

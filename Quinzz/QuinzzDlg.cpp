@@ -7,7 +7,7 @@
 #include "Quinzz.h"
 #include "QuinzzDlg.h"
 #include "afxdialogex.h"
-#include "MainDashboard.h"
+#include "DashboardDlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -163,9 +163,10 @@ HCURSOR CQuinzzDlg::OnQueryDragIcon()
 void CQuinzzDlg::OnBnClickedNewTest()
 {
 	CDialogEx::OnCancel();
-	MainDashboard main_dashboard_dlg(nameOfOwner, NULL);
-	main_dashboard_dlg.DoModal();
-	
+	//MainDashboard main_dashboard_dlg(nameOfOwner, NULL);
+	//main_dashboard_dlg.DoModal();
+	DashboardDlg dashboard_dlg(NULL, nameOfOwner);
+	dashboard_dlg.DoModal();
 }
 
 

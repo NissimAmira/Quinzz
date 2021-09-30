@@ -152,11 +152,11 @@
     <ClCompile Include="MainDashboard.cpp">
       <Filter>Source Files\Windows</Filter>
     </ClCompile>
-    <ClCompile Include="newQuizD.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GenderQuizz.cpp">
       <Filter>Source Files\Quizz\DC quizes</Filter>
+    </ClCompile>
+    <ClCompile Include="newQuizD.cpp">
+      <Filter>Source Files\Windows</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
