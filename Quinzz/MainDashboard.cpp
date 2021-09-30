@@ -40,6 +40,6 @@ END_MESSAGE_MAP()
 void MainDashboard::OnBnClickedNewQuiz()
 {
 	CWnd* p = this;
-	newQuizD newQ(p);
-	newQ.DoModal();
+	//newQuizD newQ(p);
+	//newQ.DoModal();
 }

@@ -1,4 +1,5 @@
 #pragma once
+#include "Owner.h"
 
 
 // newQuizD dialog
@@ -8,7 +9,7 @@ class newQuizD : public CDialogEx
 	DECLARE_DYNAMIC(newQuizD)
 
 public:
-	newQuizD(CWnd* pParent = nullptr);   // standard constructor
+	newQuizD(Quizz& q, CWnd* pParent = nullptr);   // standard constructor
 	virtual ~newQuizD();
 
 // Dialog Data

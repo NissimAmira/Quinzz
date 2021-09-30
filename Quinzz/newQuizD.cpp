@@ -5,13 +5,15 @@
 #include "Quinzz.h"
 #include "newQuizD.h"
 #include "afxdialogex.h"
+#include "QuestionEditor.h"
+#include "Quizz.h"
 
 
 // newQuizD dialog
 
 IMPLEMENT_DYNAMIC(newQuizD, CDialogEx)
 
-newQuizD::newQuizD(CWnd* pParent /*=nullptr*/)
+newQuizD::newQuizD(Quizz& q, CWnd* pParent)
 	: CDialogEx(IDD_NEW_QUIZ, pParent)
 	, numOfQ(0)
 	, quizTitle(_T(""))
@@ -67,5 +69,8 @@ void newQuizD::OnBnClickedDcquizRadio()
 
 void newQuizD::OnBnClickedCreateQuizBtn()
 {
-	
+	CDialogEx::OnCancel();
+	QuestionEditor q_editor_dlg(NULL);
+	//QuestionEditor q_editor_dlg(&owner,&quizz, NULL);
+	q_editor_dlg.DoModal();
 }
