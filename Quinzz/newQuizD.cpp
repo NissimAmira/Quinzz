@@ -63,6 +63,12 @@ void newQuizD::OnCbnSelchangeNumQuestions()
 
 void newQuizD::OnBnClickedDcquizRadio()
 {
+<<<<<<< HEAD
+=======
+
+}
+
+>>>>>>> parent of e1bdc05 (update)
 
 }
 
