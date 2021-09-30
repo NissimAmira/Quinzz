@@ -43,4 +43,5 @@ public:
 	afx_msg void OnBnClickedNewQuizBtn1();
 
 
+	afx_msg void OnBnClickedNewQuizBtnRun9();
 };

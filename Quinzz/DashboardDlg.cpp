@@ -4,6 +4,7 @@
 #include "pch.h"
 #include "Quinzz.h"
 #include "DashboardDlg.h"
+#include "runQuizzDlgMain.h"
 #include "afxdialogex.h"
 #include "newQuizD.h"
 
@@ -45,6 +46,7 @@ void DashboardDlg::DoDataExchange(CDataExchange* pDX)
 
 BEGIN_MESSAGE_MAP(DashboardDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_NEW_QUIZ_BTN1, &DashboardDlg::OnBnClickedNewQuizBtn1)
+	ON_BN_CLICKED(IDC_NEW_QUIZ_BTN_RUN9, &DashboardDlg::OnBnClickedNewQuizBtnRun9)
 END_MESSAGE_MAP()
 
 
@@ -64,4 +66,13 @@ void DashboardDlg::OnBnClickedNewQuizBtn1()
 	newQuiz(1, owner);
 
 
+}
+
+
+void DashboardDlg::OnBnClickedNewQuizBtnRun9()
+{
+	CDialogEx::OnCancel();
+	runQuizzDlgMain run_quiz(Quizz(),NULL);
+	//QuestionEditor q_editor_dlg(&owner,&quizz, NULL);
+	run_quiz.DoModal();
 }
