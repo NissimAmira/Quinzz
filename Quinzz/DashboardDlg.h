@@ -14,6 +14,7 @@ public:
 	DashboardDlg(CWnd* pParent, CString ownerName);   // standard constructor
 	virtual ~DashboardDlg();
 	Owner owner;
+	//tttt
 
 
 // Dialog Data
